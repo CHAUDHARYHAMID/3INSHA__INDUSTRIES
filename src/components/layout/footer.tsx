@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '../ui/button';
+import Logo from '../logo';
 
 const Footer = () => {
   const navLinks = [
@@ -23,7 +24,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Insha Industries</h3>
+            <h3 className="text-2xl font-bold">
+              <Logo className="h-12 w-auto fill-primary-foreground" />
+            </h3>
             <p className="text-primary-foreground/80">
               Committed to delivering high-quality plastic products with precision and excellence.
             </p>
