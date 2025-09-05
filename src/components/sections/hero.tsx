@@ -5,15 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-white">
-      <Image
-        src="https://picsum.photos/1920/1080"
-        alt="Industrial factory"
-        data-ai-hint="industrial factory"
-        fill
-        className="object-cover -z-10 brightness-50"
-        priority
-      />
+    <section id="home" className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-white bg-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">

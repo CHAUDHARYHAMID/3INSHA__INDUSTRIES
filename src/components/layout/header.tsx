@@ -46,20 +46,13 @@ const Header = () => {
               <span>info@inshaindustries.com</span>
             </div>
           </div>
-          <div className="flex items-center">
-            <div className="relative flex h-full items-center">
-              <div className="flex h-full items-center bg-[#125D56] pr-4">
-                <Link href="#" passHref>
-                  <Linkedin className="h-5 w-5 cursor-pointer transition-colors hover:text-gray-300" />
-                </Link>
-              </div>
-              <div className="absolute right-0 top-0 h-full w-10 bg-black top-bar-clip -mr-10"></div>
-            </div>
-            <div className="flex h-12 items-center bg-black pl-4 pr-4">
+          <div className="flex items-center space-x-4">
+              <Link href="#" passHref>
+                <Linkedin className="h-5 w-5 cursor-pointer transition-colors hover:text-gray-300" />
+              </Link>
               <Link href="#" passHref>
                 <Facebook className="h-5 w-5 cursor-pointer transition-colors hover:text-gray-300" />
               </Link>
-            </div>
           </div>
         </div>
       </div>
@@ -83,7 +76,6 @@ const Header = () => {
                 {link.icon}
               </Link>
             ))}
-             <Image src="https://picsum.photos/80/80" alt="ISO 9001 Certified" data-ai-hint="iso certificate" width={60} height={60} />
              <Button asChild className="rounded-full bg-[#125D56] px-6 text-sm font-semibold hover:bg-[#0e4a44]">
                 <Link href="#contact">ENQUIRE NOW</Link>
               </Button>
