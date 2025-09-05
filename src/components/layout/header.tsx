@@ -54,8 +54,8 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home">
-            <Image src="/logo.png" alt="Insha Industries Logo" width={250} height={45} className="h-auto" />
+          <Link href="#home" className="text-2xl font-bold text-primary">
+            Insha Industries
           </Link>
 
           {/* Desktop Navigation */}
@@ -87,8 +87,8 @@ const Header = () => {
               <SheetContent side="right" className="w-[300px] bg-background">
                 <div className="flex h-full flex-col">
                   <div className="flex items-center justify-between border-b p-4">
-                     <Link href="#home">
-                        <Image src="/logo.png" alt="Insha Industries Logo" width={180} height={32} />
+                     <Link href="#home" className="text-xl font-bold text-primary">
+                        Insha Industries
                     </Link>
                     <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
                       <X className="h-6 w-6" />

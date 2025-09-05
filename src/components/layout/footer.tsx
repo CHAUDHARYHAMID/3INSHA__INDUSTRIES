@@ -24,8 +24,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div className="space-y-4">
-            <Link href="#home">
-                <Image src="/logo.png" alt="Insha Industries Logo" width={250} height={45} />
+            <Link href="#home" className="text-2xl font-bold">
+                Insha Industries
             </Link>
             <p className="text-primary-foreground/80">
               Committed to delivering high-quality industrial valves with precision and excellence.
