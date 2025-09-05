@@ -2,10 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Linkedin, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import Image from 'next/image';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,12 +46,6 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-              <Link href="#" passHref>
-                <Linkedin className="h-5 w-5 cursor-pointer transition-colors hover:text-gray-300" />
-              </Link>
-              <Link href="#" passHref>
-                <Facebook className="h-5 w-5 cursor-pointer transition-colors hover:text-gray-300" />
-              </Link>
           </div>
         </div>
       </div>
