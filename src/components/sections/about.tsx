@@ -17,8 +17,8 @@ const AboutSection = () => {
           <div className="relative h-[400px] lg:h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
              <Image
                 src="https://picsum.photos/600/800"
-                alt="Industrial machinery"
-                data-ai-hint="industrial machinery"
+                alt="Industrial valves"
+                data-ai-hint="industrial valves"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -29,10 +29,7 @@ const AboutSection = () => {
               About Insha Industries
             </h2>
             <p className="text-lg text-muted-foreground">
-              Founded with a vision to revolutionize the plastic manufacturing industry, Insha Industries has grown to become a beacon of quality and innovation. We specialize in creating durable and high-precision plastic products for a diverse range of applications, from household items to complex industrial components.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              Our state-of-the-art facility and dedicated team of experts ensure that every product leaving our factory meets the highest standards of excellence.
+              Insha Industries, an ISO 9001:2015 certified company, specializes in the manufacturing and trading of industrial valves. With a commitment to quality and innovation, we cater to diverse industrial needs by providing a wide range of valves, including gate valves, globe valves, non-return valves, control valves, pneumatic valves, ball valves, butterfly valves, strainers, and special service valves like safety relief valves, pressure reducing valves, and breather valves. Our state-of-the-art manufacturing facilities, stringent quality control measures, and customer-centric approach have established us as a trusted name in the valve industry.
             </p>
             <div>
               <h3 className="text-xl font-bold text-primary mb-4">Our Core Values</h3>
