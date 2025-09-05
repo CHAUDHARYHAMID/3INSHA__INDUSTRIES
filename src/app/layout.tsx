@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Insha Industries',
-  description: 'Leading manufacturer of quality plastic products.',
+  description: 'Leading manufacturer and supplier of industrial valves.',
 };
 
 export default function RootLayout({

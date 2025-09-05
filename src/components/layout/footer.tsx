@@ -27,7 +27,7 @@ const Footer = () => {
               Insha Industries
             </h3>
             <p className="text-primary-foreground/80">
-              Committed to delivering high-quality plastic products with precision and excellence.
+              Committed to delivering high-quality industrial valves with precision and excellence.
             </p>
           </div>
 
