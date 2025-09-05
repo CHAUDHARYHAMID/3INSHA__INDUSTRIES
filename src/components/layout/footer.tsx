@@ -1,7 +1,6 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '../ui/button';
-import Logo from '../logo';
 
 const Footer = () => {
   const navLinks = [
@@ -25,7 +24,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">
-              <Logo className="h-12 w-auto fill-primary-foreground" />
+              Insha Industries
             </h3>
             <p className="text-primary-foreground/80">
               Committed to delivering high-quality plastic products with precision and excellence.

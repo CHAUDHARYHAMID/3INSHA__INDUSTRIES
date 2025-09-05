@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Linkedin, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import Logo from '../logo';
 import Image from 'next/image';
 
 const Header = () => {
@@ -69,7 +68,7 @@ const Header = () => {
       <div className="bg-background">
         <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="#home" className="text-2xl font-bold text-primary">
-            <Logo />
+            Insha Industries
           </Link>
 
           {/* Desktop Navigation */}
