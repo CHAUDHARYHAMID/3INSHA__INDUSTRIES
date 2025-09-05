@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import Image from 'next/image';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,8 +54,8 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="text-2xl font-bold text-primary">
-            Insha Industries
+          <Link href="#home">
+            <Image src="/logo.png" alt="Insha Industries Logo" width={250} height={45} className="h-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -86,7 +87,9 @@ const Header = () => {
               <SheetContent side="right" className="w-[300px] bg-background">
                 <div className="flex h-full flex-col">
                   <div className="flex items-center justify-between border-b p-4">
-                    <h2 className="text-xl font-bold text-primary">Menu</h2>
+                     <Link href="#home">
+                        <Image src="/logo.png" alt="Insha Industries Logo" width={180} height={32} />
+                    </Link>
                     <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
                       <X className="h-6 w-6" />
                       <span className="sr-only">Close menu</span>
