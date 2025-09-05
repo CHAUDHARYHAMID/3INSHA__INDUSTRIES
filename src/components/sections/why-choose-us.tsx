@@ -1,27 +1,37 @@
-import { BadgeCheck, Wrench, Timer, Users } from 'lucide-react';
+import { BadgeCheck, Wrench, Timer, Users, Factory, Globe, Award, HeartHandshake } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 const WhyChooseUsSection = () => {
   const features = [
     {
+      icon: <Factory className="h-8 w-8 text-accent" />,
+      title: 'Manufacturing Excellence',
+      description: 'Our state-of-the-art facilities are equipped with the latest technology, ensuring high-quality, reliable, and efficient products.',
+    },
+    {
+      icon: <Globe className="h-8 w-8 text-accent" />,
+      title: 'Trading Expertise',
+      description: 'We source and supply a wide range of valves from leading global manufacturers, ensuring timely delivery and competitive pricing.',
+    },
+    {
       icon: <BadgeCheck className="h-8 w-8 text-accent" />,
-      title: 'Quality Assurance',
-      description: 'We adhere to strict quality control measures to ensure every product is flawless.',
+      title: 'Commitment to Quality',
+      description: 'Adhering to ISO 9001:2015 standards, we ensure our products and processes meet the highest quality benchmarks.',
     },
     {
-      icon: <Wrench className="h-8 w-8 text-accent" />,
-      title: 'Custom Solutions',
-      description: 'Our team works with you to create custom-molded products that fit your exact needs.',
+      icon: <Award className="h-8 w-8 text-accent" />,
+      title: 'Commitment to Excellence',
+      description: 'We continuously improve our products and services, fostering a culture of innovation to exceed customer expectations.',
     },
-    {
-      icon: <Timer className="h-8 w-8 text-accent" />,
-      title: 'Timely Delivery',
-      description: 'Efficient production schedules and logistics mean your orders arrive on time.',
+     {
+      icon: <HeartHandshake className="h-8 w-8 text-accent" />,
+      title: 'Customer-Centric Approach',
+      description: 'Our customers are at the heart of everything we do, and we provide tailored solutions and dedicated support.',
     },
     {
       icon: <Users className="h-8 w-8 text-accent" />,
       title: 'Customer Satisfaction',
-      description: 'We prioritize our clients, offering dedicated support and exceptional service.',
+      description: 'Our ultimate goal is the satisfaction and loyalty of our customers, building long-lasting partnerships.',
     },
   ];
 
@@ -36,7 +46,7 @@ const WhyChooseUsSection = () => {
             Our commitment to excellence sets us apart. We blend advanced technology with industry expertise to deliver unparalleled value to our clients.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <Card key={feature.title} className="text-center">
               <CardHeader className="items-center">
