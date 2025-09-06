@@ -82,25 +82,24 @@ const ProductsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col relative">
-              <div className="relative overflow-hidden">
-                <Image
-                  src={offering.image}
-                  alt={offering.category}
-                  width={400}
-                  height={300}
-                  data-ai-hint={offering.hint}
-                  className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                />
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-8 bg-transparent flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-[1px] overflow-hidden">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-start justify-center pt-2 border-2 border-background">
-                  <Plus className="h-6 w-6 text-white" />
+            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col">
+              <div className="relative w-full aspect-square flex items-center justify-center p-8 bg-muted/20">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-card shadow-inner flex items-center justify-center">
+                    <Image
+                    src={"https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg"}
+                    alt={offering.category}
+                    width={100}
+                    height={100}
+                    className="object-contain transition-transform duration-300 ease-in-out group-hover:scale-105"
+                    />
+                </div>
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <Plus className="h-12 w-12 text-white" />
                 </div>
               </div>
-               <CardContent className="p-4 pt-8">
+               <CardContent className="p-4 pt-6 flex-grow flex flex-col">
                 <CardTitle className="text-lg font-semibold">{offering.category}</CardTitle>
-                <CardDescription className="text-sm text-muted-foreground mt-2">{offering.description}</CardDescription>
+                <CardDescription className="text-sm text-muted-foreground mt-2 flex-grow">{offering.description}</CardDescription>
               </CardContent>
             </Card>
           ))}
