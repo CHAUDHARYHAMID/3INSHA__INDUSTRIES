@@ -14,55 +14,55 @@ const ProductsSection = () => {
     const offerings = [
         {
             category: "Gate Valves",
-            image: "https://picsum.photos/400/300?random=1",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "gate valve",
             description: "We offer a wide range of gate valves including flanged end, butt weld end, and socket weld end for various industrial applications.",
         },
         {
             category: "Globe Valves",
-            image: "https://picsum.photos/400/300?random=2",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "globe valve",
             description: "Our durable globe valves are designed for precise throttling and flow regulation, ensuring reliable performance.",
         },
         {
             category: "Non-Return Valves",
-            image: "https://picsum.photos/400/300?random=3",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "check valve",
             description: "Prevent backflow with our high-quality non-return (check) valves, available in swing type and lift type configurations.",
         },
         {
             category: "Control Valves",
-            image: "https://picsum.photos/400/300?random=4",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "control valve",
             description: "Automate and control fluid dynamics with our advanced control valves, designed for precision and reliability.",
         },
         {
             category: "Ball Valves",
-            image: "https://picsum.photos/400/300?random=5",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "ball valve",
             description: "Experience reliable sealing and quick shut-off with our robust ball valves, available in 1-piece, 2-piece, and 3-piece designs.",
         },
         {
             category: "Butterfly Valves",
-            image: "https://picsum.photos/400/300?random=6",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "butterfly valve",
             description: "Our butterfly valves offer a compact design for efficient flow control in large-volume applications like water and HVAC systems.",
         },
         {
             category: "Forged Steel Valves",
-            image: "https://picsum.photos/400/300?random=7",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "forged steel",
             description: "For high-pressure and high-temperature services, our forged steel valves provide unmatched strength and durability.",
         },
         {
             category: "Strainers",
-            image: "https://picsum.photos/400/300?random=8",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "industrial strainer",
             description: "Protect your equipment and pipelines with our Y-type and Basket type strainers, designed to filter out debris effectively.",
         },
         {
             category: "Special Service Valves",
-            image: "https://picsum.photos/400/300?random=9",
+            image: "https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg",
             hint: "safety valve",
             description: "We provide special valves like safety relief, pressure reducing, and breather valves for critical service applications.",
         },
@@ -93,12 +93,12 @@ const ProductsSection = () => {
                   className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
               </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-8 bg-transparent flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1/2 overflow-hidden">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-start justify-center pt-2 border-2 border-white">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-8 bg-transparent flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-[1px] overflow-hidden">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-start justify-center pt-2 border-2 border-background">
                   <Plus className="h-6 w-6 text-white" />
                 </div>
               </div>
-               <CardContent className="p-4">
+               <CardContent className="p-4 pt-8">
                 <CardTitle className="text-lg font-semibold">{offering.category}</CardTitle>
                 <CardDescription className="text-sm text-muted-foreground mt-2">{offering.description}</CardDescription>
               </CardContent>
