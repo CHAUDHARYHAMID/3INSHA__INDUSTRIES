@@ -92,7 +92,7 @@ const ProductsSection = () => {
                   data-ai-hint={offering.hint}
                   className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-black/50 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pb-4">
                     <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
                         <Plus className="h-8 w-8 text-white" />
                     </div>
