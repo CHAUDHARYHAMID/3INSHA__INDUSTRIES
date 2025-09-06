@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link href="#home">
-              <Image src="/logo.svg" alt="Insha Industries Logo" width={200} height={50} />
+              <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={200} height={50} />
             </Link>
             <p className="text-primary-foreground/80">
               Committed to delivering high-quality industrial valves with precision and excellence.
