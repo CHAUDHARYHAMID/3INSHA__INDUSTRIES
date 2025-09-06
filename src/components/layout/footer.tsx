@@ -12,10 +12,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { Icon: Twitter, href: '#' },
-    { Icon: Facebook, href: '#' },
-    { Icon: Linkedin, href: '#' },
-    { Icon: Instagram, href: '#' },
+    { Icon: Twitter, href: '#', className: "bg-[#1DA1F2] hover:bg-[#1DA1F2]/90 text-white" },
+    { Icon: Facebook, href: '#', className: "bg-[#1877F2] hover:bg-[#1877F2]/90 text-white" },
+    { Icon: Linkedin, href: '#', className: "bg-[#0A66C2] hover:bg-[#0A66C2]/90 text-white" },
+    { Icon: Instagram, href: '#', className: "bg-[#E4405F] hover:bg-[#E4405F]/90 text-white" },
   ];
 
   return (
@@ -36,15 +36,6 @@ const Footer = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Google Maps Location for Insha Industries"
                 ></iframe>
-            </div>
-             <div className="flex space-x-4 pt-4">
-              {socialLinks.map(({ Icon, href }, index) => (
-                <Link key={index} href={href} passHref>
-                  <Button variant="outline" size="icon" className="border-primary-foreground/20 bg-transparent text-primary-foreground/80 hover:bg-accent hover:text-accent-foreground hover:border-accent">
-                    <Icon className="h-5 w-5" />
-                  </Button>
-                </Link>
-              ))}
             </div>
           </div>
 
@@ -77,6 +68,15 @@ const Footer = () => {
             <li className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-accent" />
                 <span className="text-primary-foreground/80">info@inshaindustries.com</span>
+            </li>
+             <li className="flex space-x-3 pt-2">
+              {socialLinks.map(({ Icon, href, className }, index) => (
+                <Link key={index} href={href} passHref>
+                  <Button variant="outline" size="icon" className={className}>
+                    <Icon className="h-5 w-5" />
+                  </Button>
+                </Link>
+              ))}
             </li>
             </ul>
           </div>
