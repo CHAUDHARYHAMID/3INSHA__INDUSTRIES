@@ -48,7 +48,7 @@ const Footer = () => {
                 <span className="text-white text-sm">Gala No. 10, Lakdewali Masjid Lane, Andheri - Kurla Rd, opp. M. K. Brothers Industrial Estate, Shivaji Nagar, Saki Naka, Mumbai, Maharashtra 400072</span>
             </li>
             <li className="flex items-center">
-                <Phone className="mr-3 h-5 w-5 text-accent" />
+                <Phone className="mr-3 h-5 w-5 text-accent fill-accent" />
                 <span className="text-white">+91 9820 40 9988</span>
             </li>
             <li className="flex items-center">
