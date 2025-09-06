@@ -82,26 +82,24 @@ const ProductsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <Card key={index} className="overflow-hidden group">
-              <div className="relative overflow-hidden rounded-t-lg">
+            <Card key={index} className="overflow-visible group relative pt-10 text-center">
+              <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-[calc(100%-40px)]">
                 <Image
                   src={offering.image}
                   alt={offering.category}
                   width={400}
                   height={300}
                   data-ai-hint={offering.hint}
-                  className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                  className="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
-                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
-                    <Plus className="h-8 w-8 text-white" />
-                  </div>
-                </div>
               </div>
-              <CardContent className="p-6 flex flex-col flex-grow bg-white rounded-b-lg">
+              <CardContent className="p-6 flex flex-col flex-grow bg-white rounded-b-lg mt-24">
                 <CardTitle className="text-xl font-bold text-primary mb-2">{offering.category}</CardTitle>
-                <CardDescription className="text-muted-foreground flex-grow">{offering.description}</CardDescription>
+                <CardDescription className="text-muted-foreground flex-grow mb-8">{offering.description}</CardDescription>
               </CardContent>
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center border-4 border-white">
+                <Plus className="h-8 w-8 text-white" />
+              </div>
             </Card>
           ))}
         </div>
