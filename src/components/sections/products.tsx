@@ -93,14 +93,10 @@ const ProductsSection = () => {
                   className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
               </div>
-              <CardContent className="p-6 flex flex-col flex-grow bg-white rounded-b-lg">
-                <CardTitle className="text-xl font-bold text-primary mb-2">{offering.category}</CardTitle>
-                <CardDescription className="text-muted-foreground flex-grow mb-4">{offering.description}</CardDescription>
-              </CardContent>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-8 bg-transparent flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-1/2 overflow-hidden">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-start justify-center pt-2 border-2 border-white">
-                    <Plus className="h-6 w-6 text-white" />
-                  </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-8 bg-transparent flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1/2 overflow-hidden">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-start justify-center pt-2 border-2 border-white">
+                  <Plus className="h-6 w-6 text-white" />
+                </div>
               </div>
             </Card>
           ))}
