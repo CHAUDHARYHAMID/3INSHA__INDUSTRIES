@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-primary text-white">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Map */}
@@ -45,15 +45,15 @@ const Footer = () => {
             <ul className="space-y-3">
             <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                <span className="text-primary-foreground/80 text-sm">Gala No. 10, Lakdewali Masjid Lane, Andheri - Kurla Rd, opp. M. K. Brothers Industrial Estate, Shivaji Nagar, Saki Naka, Mumbai, Maharashtra 400072</span>
+                <span className="text-white/80 text-sm">Gala No. 10, Lakdewali Masjid Lane, Andheri - Kurla Rd, opp. M. K. Brothers Industrial Estate, Shivaji Nagar, Saki Naka, Mumbai, Maharashtra 400072</span>
             </li>
             <li className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">+91 9820 40 9988</span>
+                <span className="text-white/80">+91 9820 40 9988</span>
             </li>
             <li className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">info@inshaindustries.com</span>
+                <span className="text-white/80">info@inshaindustries.com</span>
             </li>
              <li className="flex space-x-3 pt-2">
               {socialLinks.map(({ Icon, href, className }, index) => (
@@ -73,7 +73,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-primary-foreground/80 transition-colors hover:text-accent">
+                  <Link href={link.href} className="text-white/80 transition-colors hover:text-accent">
                       {link.label}
                   </Link>
                 </li>
@@ -83,8 +83,8 @@ const Footer = () => {
 
         </div>
       </div>
-      <div className="border-t border-primary-foreground/10 bg-primary/90">
-        <div className="container mx-auto px-4 py-4 text-center text-sm text-primary-foreground/60 sm:px-6 lg:px-8">
+      <div className="border-t border-white/10 bg-primary/90">
+        <div className="container mx-auto px-4 py-4 text-center text-sm text-white/60 sm:px-6 lg:px-8">
           &copy; {new Date().getFullYear()} Insha Industries. All Rights Reserved.
         </div>
       </div>
