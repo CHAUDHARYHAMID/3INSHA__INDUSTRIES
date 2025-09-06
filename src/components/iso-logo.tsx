@@ -7,32 +7,32 @@ export const IsoLogo = ({ className }: { className?: string }) => {
       viewBox="0 0 100 100"
       className={cn("w-16 h-16", className)}
     >
-      <circle cx="50" cy="50" r="48" fill="none" stroke="#333" strokeWidth="3" />
+      <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="3" />
       <path
-        d="M25,55 Q50,20 75,55"
+        d="M30 50 L45 65 L70 40"
         fill="none"
-        stroke="#333"
-        strokeWidth="3"
+        stroke="currentColor"
+        strokeWidth="5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <text
         x="50"
-        y="50"
+        y="25"
         textAnchor="middle"
-        dy=".3em"
-        fontSize="12"
+        fontSize="10"
         fontWeight="bold"
-        fill="#333"
+        fill="currentColor"
       >
         ISO 9001
       </text>
       <text
         x="50"
-        y="68"
+        y="85"
         textAnchor="middle"
-        dy=".3em"
-        fontSize="8"
+        fontSize="10"
         fontWeight="bold"
-        fill="#333"
+        fill="currentColor"
       >
         CERTIFIED
       </text>
