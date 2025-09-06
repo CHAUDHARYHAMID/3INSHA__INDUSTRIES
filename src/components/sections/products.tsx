@@ -83,7 +83,7 @@ const ProductsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
             <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col relative">
-              <div className="overflow-hidden">
+              <div className="relative overflow-hidden">
                 <Image
                   src={offering.image}
                   alt={offering.category}
@@ -97,8 +97,10 @@ const ProductsSection = () => {
                 <CardTitle className="text-xl font-bold text-primary mb-2">{offering.category}</CardTitle>
                 <CardDescription className="text-muted-foreground flex-grow mb-4">{offering.description}</CardDescription>
               </CardContent>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-16 bg-primary rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-0">
-                  <Plus className="h-8 w-8 text-white" />
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-8 bg-transparent flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-0 overflow-hidden">
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center pt-2">
+                    <Plus className="h-6 w-6 text-white" />
+                  </div>
               </div>
             </Card>
           ))}
