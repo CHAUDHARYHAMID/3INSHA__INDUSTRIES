@@ -55,12 +55,13 @@ const ContactSection = () => {
             </div>
              <div className="rounded-lg overflow-hidden h-64 md:h-80 lg:h-full bg-muted shadow-sm">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.473341968798!2d72.8981086759247!3d19.08688175201174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ccb306b9b3%3A0x1377b5d33f78742f!2sInsha%20Industries!5e0!3m2!1sen!2sus!4v1719416518175!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.7405189595265!2d72.88023877497784!3d19.094868382113603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9ed59bcafe7%3A0xf033877a9035a5be!2sINSHA%20INDUSTRIES!5e1!3m2!1sen!2sin!4v1757142808692!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen={false}
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                   title="Google Maps Location for Insha Industries"
                 ></iframe>
             </div>
