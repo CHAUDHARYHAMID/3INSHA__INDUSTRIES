@@ -98,6 +98,10 @@ const ProductsSection = () => {
                   <Plus className="h-6 w-6 text-white" />
                 </div>
               </div>
+               <CardContent className="p-4">
+                <CardTitle className="text-lg font-semibold">{offering.category}</CardTitle>
+                <CardDescription className="text-sm text-muted-foreground mt-2">{offering.description}</CardDescription>
+              </CardContent>
             </Card>
           ))}
         </div>
