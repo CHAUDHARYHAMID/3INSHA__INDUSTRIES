@@ -6,7 +6,6 @@ import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Image from 'next/image';
-import { IsoLogo } from '../iso-logo';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,7 +70,6 @@ const Header = () => {
                 {link.icon}
               </Link>
             ))}
-            <IsoLogo className="h-16 w-16 text-primary" />
              <Button asChild className="rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                 <Link href="#contact">ENQUIRE NOW</Link>
               </Button>
@@ -114,7 +112,6 @@ const Header = () => {
                       ))}
                     </div>
                      <div className="flex flex-col items-center gap-4 py-4">
-                        <IsoLogo className="h-20 w-20 text-primary" />
                         <Button asChild className="w-full rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                            <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>ENQUIRE NOW</Link>
                          </Button>
