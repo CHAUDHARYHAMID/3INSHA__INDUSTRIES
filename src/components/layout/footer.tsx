@@ -21,11 +21,11 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Map */}
-          <div className="space-y-4 md:col-span-2 lg:col-span-2">
+          <div className="space-y-4">
             <h4 className="text-lg font-semibold uppercase tracking-wider">Our Location</h4>
-            <div className="rounded-lg overflow-hidden h-48 bg-muted shadow-sm">
+            <div className="rounded-lg overflow-hidden aspect-square bg-muted shadow-sm">
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.830588632111!2d72.88023877519999!3d19.07125398213233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9ed59bcafe7%3A0xf033877a9035a5be!2sINSHA%20INDUSTRIES!5e0!3m2!1sen!2sin!4v1757142808692!5m2!1sen!2sin"
                 width="100%"
