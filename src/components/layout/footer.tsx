@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                <span className="text-primary-foreground/80">9, Kherani Rd, Yadav Nagar, Chandivali, Sakinaka, Mumbai, Maharashtra 400072, India</span>
+                <span className="text-primary-foreground/80">Gala No. 10, Lakdewali Masjid Lane, Andheri - Kurla Rd, opp. M. K. Brothers Industrial Estate, Shivaji Nagar, Saki Naka, Mumbai, Maharashtra 400072</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-accent" />
