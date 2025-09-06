@@ -58,7 +58,7 @@ const Footer = () => {
              <li className="flex space-x-3 pt-2">
               {socialLinks.map(({ Icon, href, className }, index) => (
                 <Link key={index} href={href} passHref>
-                  <Button variant="outline" size="icon" className={className}>
+                  <Button variant="outline" size="icon" className={className} suppressHydrationWarning>
                     <Icon className="h-5 w-5" />
                   </Button>
                 </Link>
