@@ -39,20 +39,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold uppercase tracking-wider">Quick Links</h4>
-            <ul className="space-y-2">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-primary-foreground/80 transition-colors hover:text-accent">
-                      {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact Info */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold uppercase tracking-wider">Contact Us</h4>
@@ -80,6 +66,21 @@ const Footer = () => {
             </li>
             </ul>
           </div>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold uppercase tracking-wider">Quick Links</h4>
+            <ul className="space-y-2">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-primary-foreground/80 transition-colors hover:text-accent">
+                      {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
       </div>
       <div className="border-t border-primary-foreground/10 bg-primary/90">
