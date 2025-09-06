@@ -35,13 +35,13 @@ const Header = () => {
     >
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground">
-        <div className="container mx-auto flex h-12 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center space-x-6 text-sm">
+        <div className="container mx-auto flex h-auto min-h-[3rem] items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm">
             <div className="flex items-center">
               <Phone className="mr-2 h-4 w-4" />
               <span>+91 9820 40 9988</span>
             </div>
-            <div className="hidden items-center md:flex">
+            <div className="flex items-center">
               <Mail className="mr-2 h-4 w-4" />
               <span>info@inshaindustries.com</span>
             </div>
