@@ -82,8 +82,8 @@ const ProductsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col">
-              <div className="relative overflow-hidden">
+            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col relative">
+              <div className="overflow-hidden">
                 <Image
                   src={offering.image}
                   alt={offering.category}
@@ -92,16 +92,14 @@ const ProductsSection = () => {
                   data-ai-hint={offering.hint}
                   className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/50 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4">
-                        <Plus className="h-8 w-8 text-white" />
-                    </div>
-                </div>
               </div>
               <CardContent className="p-6 flex flex-col flex-grow bg-white rounded-b-lg">
                 <CardTitle className="text-xl font-bold text-primary mb-2">{offering.category}</CardTitle>
                 <CardDescription className="text-muted-foreground flex-grow mb-4">{offering.description}</CardDescription>
               </CardContent>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-16 bg-primary rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-0">
+                  <Plus className="h-8 w-8 text-white" />
+              </div>
             </Card>
           ))}
         </div>
