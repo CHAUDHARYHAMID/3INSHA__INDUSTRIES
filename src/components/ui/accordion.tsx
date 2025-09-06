@@ -11,17 +11,14 @@ const Accordion = AccordionPrimitive.Root
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
->(({ className, ...props }, ref) => {
-  const id = React.useId()
-  return (
+>(({ className, ...props }, ref) => (
     <AccordionPrimitive.Item
       ref={ref}
       className={cn("border-b", className)}
       {...props}
-      value={props.value ?? id}
     />
   )
-})
+)
 AccordionItem.displayName = "AccordionItem"
 
 const AccordionTrigger = React.forwardRef<

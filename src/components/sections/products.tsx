@@ -304,7 +304,7 @@ const ProductsSection = () => {
 
         <Accordion type="single" collapsible className="w-full space-y-4">
           {offerings.map((offering, index) => (
-            <AccordionItem value={`item-${index}`} key={index} className="border rounded-lg bg-card px-6">
+            <AccordionItem value={`item-${index + 1}`} key={index} className="border rounded-lg bg-card px-6">
               <AccordionTrigger className="text-xl font-bold text-primary hover:no-underline">
                 {offering.category}
               </AccordionTrigger>
