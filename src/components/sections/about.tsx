@@ -11,22 +11,13 @@ const AboutSection = () => {
               About Insha Industries
             </h2>
         </div>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-          <div className="relative h-[400px] lg:h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
-             <Image
-                src="https://picsum.photos/600/800"
-                alt="Industrial valves"
-                data-ai-hint="industrial valves"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-          </div>
-          <div className="space-y-6">
-            <p className="text-lg text-muted-foreground">
-              Insha Industries, an ISO 9001:2015 certified company, specializes in the manufacturing and trading of industrial valves. With a commitment to quality and innovation, we cater to diverse industrial needs by providing a wide range of valves, including gate valves, globe valves, non-return valves, control valves, pneumatic valves, ball valves, butterfly valves, strainers, and special service valves like safety relief valves, pressure reducing valves, and breather valves. Our state-of-the-art manufacturing facilities, stringent quality control measures, and customer-centric approach have established us as a trusted name in the valve industry.
-            </p>
-            <div className="space-y-8">
+        <div className="grid grid-cols-1 gap-12 items-center">
+            <div className="max-w-4xl mx-auto text-center">
+                 <p className="text-lg text-muted-foreground">
+                    Insha Industries, an ISO 9001:2015 certified company, specializes in the manufacturing and trading of industrial valves. With a commitment to quality and innovation, we cater to diverse industrial needs by providing a wide range of valves, including gate valves, globe valves, non-return valves, control valves, pneumatic valves, ball valves, butterfly valves, strainers, and special service valves like safety relief valves, pressure reducing valves, and breather valves. Our state-of-the-art manufacturing facilities, stringent quality control measures, and customer-centric approach have established us as a trusted name in the valve industry.
+                </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
                         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -50,7 +41,6 @@ const AboutSection = () => {
                     </div>
                 </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
