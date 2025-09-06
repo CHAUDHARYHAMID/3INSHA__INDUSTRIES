@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                <span className="text-primary-foreground/80">INSHA INDUSTRIES, 9, Kherani Rd, Yadav Nagar, Chandivali, Sakinaka, Mumbai, Maharashtra 400072, India</span>
+                <span className="text-primary-foreground/80">9, Kherani Rd, Yadav Nagar, Chandivali, Sakinaka, Mumbai, Maharashtra 400072, India</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-accent" />

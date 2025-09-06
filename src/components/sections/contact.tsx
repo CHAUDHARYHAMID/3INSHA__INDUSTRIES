@@ -26,7 +26,7 @@ const ContactSection = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-primary">Our Address</h4>
-                    <p className="text-muted-foreground">INSHA INDUSTRIES, 9, Kherani Rd, Yadav Nagar, Chandivali, Sakinaka, Mumbai, Maharashtra 400072, India</p>
+                    <p className="text-muted-foreground">9, Kherani Rd, Yadav Nagar, Chandivali, Sakinaka, Mumbai, Maharashtra 400072, India</p>
                   </div>
                 </div>
                  <div className="flex items-start">
