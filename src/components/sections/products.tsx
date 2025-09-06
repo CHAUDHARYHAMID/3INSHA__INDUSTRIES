@@ -8,6 +8,7 @@ import {
 } from '../ui/card';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import { Plus } from 'lucide-react';
 
 const ProductsSection = () => {
     const offerings = [
@@ -68,7 +69,7 @@ const ProductsSection = () => {
     ]
 
   return (
-    <section id="products" className="py-16 lg:py-24 bg-card">
+    <section id="products" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">
@@ -81,27 +82,21 @@ const ProductsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <Card key={index} className="overflow-hidden flex flex-col group">
-              <CardHeader className="p-0">
-                <div className="overflow-hidden">
-                    <Image
-                    src={offering.image}
-                    alt={offering.category}
-                    width={400}
-                    height={300}
-                    data-ai-hint={offering.hint}
-                    className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                    />
-                </div>
-              </CardHeader>
-              <CardContent className="p-6 flex flex-col flex-grow">
+            <Card key={index} className="overflow-hidden relative group">
+              <Image
+                src={offering.image}
+                alt={offering.category}
+                width={400}
+                height={300}
+                data-ai-hint={offering.hint}
+                className="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <Plus className="h-16 w-16 text-green-500" />
+              </div>
+              <CardContent className="p-6 flex flex-col flex-grow bg-white">
                 <CardTitle className="text-xl font-bold text-primary mb-2">{offering.category}</CardTitle>
                 <CardDescription className="text-muted-foreground flex-grow">{offering.description}</CardDescription>
-                <div className="mt-6">
-                    <Button asChild variant="outline" className="text-primary border-primary hover:bg-primary hover:text-white">
-                        <Link href="#">Read More</Link>
-                    </Button>
-                </div>
               </CardContent>
             </Card>
           ))}
