@@ -70,6 +70,7 @@ const Header = () => {
                 {link.icon}
               </Link>
             ))}
+            <Image src="/iso-9001-logo.png" alt="ISO 9001 Certified" width={60} height={60} />
              <Button asChild className="rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                 <Link href="#contact">ENQUIRE NOW</Link>
               </Button>
@@ -107,6 +108,9 @@ const Header = () => {
                         {link.icon}
                       </Link>
                     ))}
+                     <div className="flex items-center justify-center py-4">
+                        <Image src="/iso-9001-logo.png" alt="ISO 9001 Certified" width={80} height={80} />
+                     </div>
                      <Button asChild className="w-full rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                         <Link href="#contact">ENQUIRE NOW</Link>
                       </Button>
