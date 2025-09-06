@@ -97,8 +97,8 @@ const ProductsSection = () => {
                 <CardTitle className="text-xl font-bold text-primary mb-2">{offering.category}</CardTitle>
                 <CardDescription className="text-muted-foreground flex-grow mb-4">{offering.description}</CardDescription>
               </CardContent>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-8 bg-transparent flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-[-1.5rem] overflow-hidden">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center pt-2">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-8 bg-transparent flex items-start justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:-translate-y-4 overflow-hidden">
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-start justify-center pt-2">
                     <Plus className="h-6 w-6 text-white" />
                   </div>
               </div>
