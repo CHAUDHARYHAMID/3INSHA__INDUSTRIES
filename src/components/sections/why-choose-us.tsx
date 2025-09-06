@@ -4,32 +4,32 @@ import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 const WhyChooseUsSection = () => {
   const features = [
     {
-      icon: <Factory className="h-8 w-8 text-accent" />,
+      icon: <Factory className="h-8 w-8 text-primary" />,
       title: 'Manufacturing Excellence',
       description: 'Our state-of-the-art facilities are equipped with the latest technology, ensuring high-quality, reliable, and efficient products.',
     },
     {
-      icon: <Globe className="h-8 w-8 text-accent" />,
+      icon: <Globe className="h-8 w-8 text-primary" />,
       title: 'Trading Expertise',
       description: 'We source and supply a wide range of valves from leading global manufacturers, ensuring timely delivery and competitive pricing.',
     },
     {
-      icon: <BadgeCheck className="h-8 w-8 text-accent" />,
+      icon: <BadgeCheck className="h-8 w-8 text-primary" />,
       title: 'Commitment to Quality',
       description: 'Adhering to ISO 9001:2015 standards, we ensure our products and processes meet the highest quality benchmarks.',
     },
     {
-      icon: <Award className="h-8 w-8 text-accent" />,
+      icon: <Award className="h-8 w-8 text-primary" />,
       title: 'Commitment to Excellence',
       description: 'We continuously improve our products and services, fostering a culture of innovation to exceed customer expectations.',
     },
      {
-      icon: <HeartHandshake className="h-8 w-8 text-accent" />,
+      icon: <HeartHandshake className="h-8 w-8 text-primary" />,
       title: 'Customer-Centric Approach',
       description: 'Our customers are at the heart of everything we do, and we provide tailored solutions and dedicated support.',
     },
     {
-      icon: <Users className="h-8 w-8 text-accent" />,
+      icon: <Users className="h-8 w-8 text-primary" />,
       title: 'Customer Satisfaction',
       description: 'Our ultimate goal is the satisfaction and loyalty of our customers, building long-lasting partnerships.',
     },
@@ -50,7 +50,7 @@ const WhyChooseUsSection = () => {
           {features.map((feature) => (
             <Card key={feature.title} className="text-center">
               <CardHeader className="items-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent/10 mb-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
                   {feature.icon}
                 </div>
                 <CardTitle>{feature.title}</CardTitle>

@@ -34,7 +34,7 @@ const Header = () => {
       }`}
     >
       {/* Top Bar */}
-      <div className="bg-[#125D56] text-white">
+      <div className="bg-primary text-primary-foreground">
         <div className="container mx-auto flex h-12 items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-6 text-sm">
             <div className="flex items-center">
@@ -55,7 +55,7 @@ const Header = () => {
       <div className="bg-background">
         <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="#home">
-            <Image src="/logo.svg" alt="Insha Industries Logo" width={180} height={40} />
+             <Image src="/logo.svg" alt="Insha Industries Logo" width={180} height={40} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -70,7 +70,7 @@ const Header = () => {
                 {link.icon}
               </Link>
             ))}
-             <Button asChild className="rounded-full bg-[#125D56] px-6 text-sm font-semibold hover:bg-[#0e4a44]">
+             <Button asChild className="rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                 <Link href="#contact">ENQUIRE NOW</Link>
               </Button>
           </nav>
@@ -107,7 +107,7 @@ const Header = () => {
                         {link.icon}
                       </Link>
                     ))}
-                     <Button asChild className="w-full rounded-full bg-[#125D56] px-6 text-sm font-semibold hover:bg-[#0e4a44]">
+                     <Button asChild className="w-full rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                         <Link href="#contact">ENQUIRE NOW</Link>
                       </Button>
                   </nav>

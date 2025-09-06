@@ -11,11 +11,11 @@ const HeroSection = () => {
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Excellence in Industrial Valves
           </h1>
-          <p className="mt-6 text-lg text-gray-200 sm:text-xl md:text-2xl">
+          <p className="mt-6 text-lg text-primary-foreground/80 sm:text-xl md:text-2xl">
             Delivering top-tier, custom-engineered valve solutions for every industry.
           </p>
           <div className="mt-10">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-7 px-10">
+            <Button asChild size="lg" variant="secondary" className="text-lg py-7 px-10">
               <Link href="#products">
                 Explore Our Products
                 <ArrowRight className="ml-2 h-5 w-5" />

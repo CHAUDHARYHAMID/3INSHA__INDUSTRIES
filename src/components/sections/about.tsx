@@ -29,7 +29,7 @@ const AboutSection = () => {
             <div className="space-y-8">
                 <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-accent-foreground">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                             <Target className="h-6 w-6" />
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const AboutSection = () => {
                 </div>
                 <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-accent-foreground">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                             <Eye className="h-6 w-6" />
                         </div>
                     </div>
