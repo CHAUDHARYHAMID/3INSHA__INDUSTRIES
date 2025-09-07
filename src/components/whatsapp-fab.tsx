@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from './ui/button';
-import Image from 'next/image';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppFAB = () => {
   return (
@@ -13,15 +13,10 @@ const WhatsAppFAB = () => {
     >
       <Button
         size="icon"
-        className="rounded-full bg-green-500 hover:bg-green-600 h-16 w-16 shadow-lg p-0 overflow-hidden"
+        className="rounded-full bg-green-500 hover:bg-green-600 h-16 w-16 shadow-lg"
         suppressHydrationWarning
       >
-        <Image
-          src="https://i.postimg.cc/2Sf5d4CF/360-F-532206245-N1x-YEHr-ZVIWU1iham-Wwm-Dbh1g-ZWGU7-Jl.jpg"
-          alt="WhatsApp"
-          fill
-          className="object-cover"
-        />
+        <FaWhatsapp className="h-8 w-8 text-white" />
         <span className="sr-only">Contact us on WhatsApp</span>
       </Button>
     </Link>
