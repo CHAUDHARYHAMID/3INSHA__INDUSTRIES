@@ -16,7 +16,7 @@ const WhatsAppFAB = () => {
         className="rounded-full bg-green-500 hover:bg-green-600 h-16 w-16 shadow-lg"
         suppressHydrationWarning
       >
-        <FaWhatsapp className="h-8 w-8 text-white" />
+        <FaWhatsapp className="h-10 w-10 text-white" />
         <span className="sr-only">Contact us on WhatsApp</span>
       </Button>
     </Link>
