@@ -6,6 +6,7 @@ import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,8 +55,8 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home">
-             <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={280} height={70} />
+          <Link href="#home" className="relative h-16 w-48 md:h-20 md:w-64 lg:w-80">
+             <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" fill className="object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
