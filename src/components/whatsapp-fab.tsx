@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Button } from './ui/button';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppFAB = () => {
@@ -11,14 +10,10 @@ const WhatsAppFAB = () => {
       className="fixed bottom-6 right-6 z-50"
       suppressHydrationWarning
     >
-      <Button
-        size="icon"
-        className="rounded-full bg-green-500 hover:bg-green-600 h-16 w-16 shadow-lg"
-        suppressHydrationWarning
-      >
-        <FaWhatsapp className="h-14 w-14 text-white" />
+      <div className="relative h-16 w-16 flex items-center justify-center">
+        <FaWhatsapp className="h-16 w-16 text-green-500" />
         <span className="sr-only">Contact us on WhatsApp</span>
-      </Button>
+      </div>
     </Link>
   );
 };
