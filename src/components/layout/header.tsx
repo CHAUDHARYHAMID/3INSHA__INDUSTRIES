@@ -55,12 +55,12 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="relative h-16 w-48 md:h-20 md:w-64 lg:w-80">
+          <Link href="#home" className="relative h-14 w-40 md:h-16 md:w-56">
              <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" fill className="object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center space-x-6 md:flex">
+          <nav className="hidden items-center space-x-4 md:flex lg:space-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -71,7 +71,7 @@ const Header = () => {
                 {link.icon}
               </Link>
             ))}
-            <Image src="https://i.postimg.cc/xj7Sv4Jm/logo-iso-9001-png.png" alt="ISO 9001 Certified" width={100} height={50} />
+            <Image src="https://i.postimg.cc/xj7Sv4Jm/logo-iso-9001-png.png" alt="ISO 9001 Certified" width={100} height={50} className="hidden lg:block" />
              <Button asChild className="rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                 <Link href="#contact">ENQUIRE NOW</Link>
               </Button>
