@@ -12,10 +12,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { Icon: Twitter, href: '#', className: "bg-[#1DA1F2] hover:bg-[#1DA1F2]/90 text-white" },
-    { Icon: Facebook, href: '#', className: "bg-[#1877F2] hover:bg-[#1877F2]/90 text-white" },
-    { Icon: Linkedin, href: '#', className: "bg-[#0A66C2] hover:bg-[#0A66C2]/90 text-white" },
-    { Icon: Instagram, href: '#', className: "bg-[#E4405F] hover:bg-[#E4405F]/90 text-white" },
+    { Icon: Twitter, href: '#', className: "bg-white/10 hover:bg-white/20 text-white" },
+    { Icon: Facebook, href: '#', className: "bg-white/10 hover:bg-white/20 text-white" },
+    { Icon: Linkedin, href: '#', className: "bg-white/10 hover:bg-white/20 text-white" },
+    { Icon: Instagram, href: '#', className: "bg-white/10 hover:bg-white/20 text-white" },
   ];
 
   return (
@@ -48,7 +48,7 @@ const Footer = () => {
                 <span className="text-white text-sm">Gala No. 10, Lakdewali Masjid Lane, Andheri - Kurla Rd, opp. M. K. Brothers Industrial Estate, Shivaji Nagar, Saki Naka, Mumbai, Maharashtra 400072</span>
             </li>
             <li className="flex items-center">
-                <Phone className="mr-3 h-5 w-5 text-accent fill-accent" />
+                <Phone className="mr-3 h-5 w-5 text-accent" />
                 <span className="text-white">+91 9820 40 9988</span>
             </li>
             <li className="flex items-center">
