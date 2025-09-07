@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-white">
       <Image
-        src="https://i.postimg.cc/yNk2kb2f/Top-image.webp"
+        src="https://i.postimg.cc/2Sf5d4CF/360-F-532206245-N1x-YEHr-ZVIWU1iham-Wwm-Dbh1g-ZWGU7-Jl.jpg"
         alt="Industrial valves background"
         fill
         className="object-cover"
