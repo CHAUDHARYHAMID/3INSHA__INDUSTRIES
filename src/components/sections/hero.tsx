@@ -5,13 +5,22 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-white bg-primary">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section id="home" className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-white">
+      <Image
+        src="https://i.postimg.cc/yNk2kb2f/Top-image.webp"
+        alt="Industrial valves background"
+        fill
+        className="object-cover"
+        data-ai-hint="industrial valves"
+        priority
+      />
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Excellence in Industrial Valves
           </h1>
-          <p className="mt-6 text-lg text-primary-foreground/80 sm:text-xl md:text-2xl">
+          <p className="mt-6 text-lg text-white/80 sm:text-xl md:text-2xl">
             Delivering top-tier, custom-engineered valve solutions for every industry.
           </p>
           <div className="mt-10">
