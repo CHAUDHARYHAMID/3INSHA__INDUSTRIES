@@ -31,8 +31,8 @@ const HeroSection = () => {
       buttonLink: '#why-us',
     },
     {
-      image: 'https://picsum.photos/1200/800',
-      hint: 'engineer working',
+      image: 'https://i.postimg.cc/zvnpqYd4/3-nrv-banner.png',
+      hint: 'non-return valve',
       title: 'Custom Solutions for Your Needs',
       description:
         'We specialize in creating bespoke valve solutions tailored to your specific operational requirements.',
