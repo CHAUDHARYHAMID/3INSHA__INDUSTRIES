@@ -25,7 +25,7 @@ const slides = [
     title: 'Globe Valves',
     image: 'https://i.postimg.cc/k42p3ZPd/2-globe-valve-banner.jpg',
     hint: 'globe valve',
-    highlightImage: 'https://picsum.photos/300/300',
+    highlightImage: 'https://i.postimg.cc/3RwZXkFB/2-GLOBE-VALVE-highlighter.jpg',
     highlightHint: 'globe valve',
   },
   {
