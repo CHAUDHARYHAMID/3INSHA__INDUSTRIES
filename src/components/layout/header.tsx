@@ -10,6 +10,15 @@ import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { href: '#home', label: 'HOME' },
@@ -21,7 +30,10 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full transition-shadow duration-300`}
+      className={cn(
+        'sticky top-0 z-50 w-full bg-background transition-shadow duration-300',
+        scrolled ? 'shadow-md' : ''
+      )}
     >
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground">
