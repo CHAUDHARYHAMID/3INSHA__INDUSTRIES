@@ -62,6 +62,9 @@ const Header = () => {
                 </Link>
               ))}
               <Image src="https://i.postimg.cc/xj7Sv4Jm/logo-iso-9001-png.png" alt="ISO 9001 Certified" width={100} height={50} className="hidden lg:block" />
+              <Button asChild className="rounded-full bg-primary px-6 text-base font-semibold text-primary-foreground hover:bg-primary/90">
+                <Link href="#contact">ENQUIRE NOW</Link>
+              </Button>
             </nav>
           </div>
 
@@ -105,6 +108,9 @@ const Header = () => {
                       </div>
                     </div>
                      <div className="flex flex-col items-center gap-4 py-4">
+                        <Button asChild className="w-full rounded-full bg-primary px-6 text-base font-semibold text-primary-foreground hover:bg-primary/90">
+                           <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>ENQUIRE NOW</Link>
+                         </Button>
                      </div>
                   </nav>
                 </div>
