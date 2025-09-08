@@ -39,11 +39,11 @@ const slides = [
     objectFit: 'cover',
   },
   {
-    title: 'Control Valves',
+    title: 'Forged Steel Valves',
     image: 'https://picsum.photos/1920/1080',
-    hint: 'control valve',
+    hint: 'forged steel valve',
     highlightImage: 'https://picsum.photos/300/300',
-    highlightHint: 'control valve',
+    highlightHint: 'forged steel valve',
     objectFit: 'cover',
   },
   {
@@ -63,11 +63,11 @@ const slides = [
     objectFit: 'cover',
   },
   {
-    title: 'Forged Steel Valves',
+    title: 'Control Valves',
     image: 'https://picsum.photos/1920/1080',
-    hint: 'forged steel valve',
+    hint: 'control valve',
     highlightImage: 'https://picsum.photos/300/300',
-    highlightHint: 'forged steel valve',
+    highlightHint: 'control valve',
     objectFit: 'cover',
   },
 ];
