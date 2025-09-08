@@ -54,6 +54,22 @@ const slides = [
     highlightHint: 'ball valve',
     objectFit: 'contain',
   },
+  {
+    title: 'Butterfly Valves',
+    image: 'https://picsum.photos/1920/1080',
+    hint: 'butterfly valve',
+    highlightImage: 'https://picsum.photos/300/300',
+    highlightHint: 'butterfly valve',
+    objectFit: 'cover',
+  },
+  {
+    title: 'Forged Steel Valves',
+    image: 'https://picsum.photos/1920/1080',
+    hint: 'forged steel valve',
+    highlightImage: 'https://picsum.photos/300/300',
+    highlightHint: 'forged steel valve',
+    objectFit: 'cover',
+  },
 ];
 
 const HeroSection = () => {
