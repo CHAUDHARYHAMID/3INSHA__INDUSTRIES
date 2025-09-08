@@ -54,15 +54,6 @@ const Footer = () => {
                 <Mail className="mr-3 h-5 w-5 text-accent" />
                 <span className="text-white">info@inshaindustries.com</span>
             </li>
-             <li className="flex space-x-3 pt-2">
-              {socialLinks.map(({ Icon, href, className }, index) => (
-                <Link key={index} href={href} passHref>
-                  <Button variant="outline" size="icon" className={className} suppressHydrationWarning>
-                    <Icon className="h-5 w-5" />
-                  </Button>
-                </Link>
-              ))}
-            </li>
             </ul>
           </div>
 
@@ -78,6 +69,15 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+             <div className="flex space-x-3 pt-4">
+              {socialLinks.map(({ Icon, href, className }, index) => (
+                <Link key={index} href={href} passHref>
+                  <Button variant="outline" size="icon" className={className} suppressHydrationWarning>
+                    <Icon className="h-5 w-5" />
+                  </Button>
+                </Link>
+              ))}
+            </div>
           </div>
 
         </div>
