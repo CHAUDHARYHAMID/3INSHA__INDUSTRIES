@@ -45,7 +45,7 @@ const Header = () => {
       <div className="bg-background">
         <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="#home" className="flex-shrink-0">
-             <span className="text-2xl font-bold text-primary">Insha Industries</span>
+             <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={200} height={50} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -79,7 +79,7 @@ const Header = () => {
                 <div className="flex h-full flex-col">
                   <div className="flex items-center justify-between border-b p-4">
                      <Link href="#home" onClick={() => setMobileMenuOpen(false)}>
-                        <span className="text-xl font-bold text-primary">Insha Industries</span>
+                        <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={150} height={40} />
                     </Link>
                     <SheetTrigger asChild>
                       <Button variant="ghost" size="icon">
