@@ -13,15 +13,6 @@ import {
 const HeroSection = () => {
   const slides = [
     {
-      image: 'https://i.postimg.cc/yNk2kb2f/Top-image.webp',
-      hint: 'industrial valves',
-      title: 'Excellence in Industrial Valves',
-      description:
-        'Delivering top-tier, custom-engineered valve solutions for every industry.',
-      buttonText: 'Explore Our Products',
-      buttonLink: '#products',
-    },
-    {
       image: 'https://picsum.photos/1200/800',
       hint: 'factory interior',
       title: 'ISO 9001:2015 Certified Quality',
@@ -29,6 +20,15 @@ const HeroSection = () => {
         'Our commitment to quality ensures every valve meets the highest international standards.',
       buttonText: 'Learn About Our Quality',
       buttonLink: '#why-us',
+    },
+    {
+      image: 'https://i.postimg.cc/yNk2kb2f/Top-image.webp',
+      hint: 'industrial valves',
+      title: 'Excellence in Industrial Valves',
+      description:
+        'Delivering top-tier, custom-engineered valve solutions for every industry.',
+      buttonText: 'Explore Our Products',
+      buttonLink: '#products',
     },
     {
       image: 'https://picsum.photos/1200/800',
