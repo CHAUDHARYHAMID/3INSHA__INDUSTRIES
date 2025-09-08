@@ -44,27 +44,29 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="flex-shrink-0">
-             <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={420} height={120} />
-          </Link>
+          <div className="flex items-center gap-x-12">
+            <Link href="#home" className="flex-shrink-0">
+               <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={420} height={120} />
+            </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden items-center md:flex justify-end gap-x-4 lg:gap-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="relative flex items-center text-sm font-semibold text-foreground/80 transition-colors hover:text-primary"
-              >
-                {link.label}
-                {link.icon}
-              </Link>
-            ))}
-            <Image src="https://i.postimg.cc/xj7Sv4Jm/logo-iso-9001-png.png" alt="ISO 9001 Certified" width={100} height={50} className="hidden lg:block" />
-             <Button asChild className="rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
-                <Link href="#contact">ENQUIRE NOW</Link>
-              </Button>
-          </nav>
+            {/* Desktop Navigation */}
+            <nav className="hidden items-center md:flex justify-end gap-x-4 lg:gap-x-6">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="relative flex items-center text-sm font-semibold text-foreground/80 transition-colors hover:text-primary"
+                >
+                  {link.label}
+                  {link.icon}
+                </Link>
+              ))}
+              <Image src="https://i.postimg.cc/xj7Sv4Jm/logo-iso-9001-png.png" alt="ISO 9001 Certified" width={100} height={50} className="hidden lg:block" />
+               <Button asChild className="rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
+                  <Link href="#contact">ENQUIRE NOW</Link>
+                </Button>
+            </nav>
+          </div>
 
           {/* Mobile Navigation */}
           <div className="md:hidden">
