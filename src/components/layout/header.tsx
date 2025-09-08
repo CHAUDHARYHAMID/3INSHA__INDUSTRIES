@@ -30,13 +30,11 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full transition-shadow duration-300 ${
-        isScrolled ? 'shadow-lg' : ''
-      }`}
+      className={`w-full transition-shadow duration-300`}
     >
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground">
-        <div className="mx-auto flex h-auto min-h-[2rem] items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-auto min-h-[1.5rem] items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm">
             <div className="flex items-center">
               <Phone className="mr-2 h-4 w-4" />
@@ -55,8 +53,8 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="flex-shrink-0">
-             <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={300} height={73} className="h-auto" />
+          <Link href="#home" className="flex-shrink-0 ml-12">
+             <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={275} height={67} className="h-auto" />
           </Link>
 
           {/* Desktop Navigation */}
