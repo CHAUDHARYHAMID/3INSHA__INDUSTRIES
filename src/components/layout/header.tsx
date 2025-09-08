@@ -26,7 +26,7 @@ const Header = () => {
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground">
         <div className="mx-auto flex h-auto min-h-[1rem] items-center justify-between px-4 py-1 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm md:ml-20">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm md:ml-12">
             <div className="flex items-center">
               <Phone className="mr-2 h-4 w-4" />
               <span>+91 9820409988</span>
@@ -44,12 +44,12 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="flex-shrink-0 md:ml-20">
+          <Link href="#home" className="flex-shrink-0 md:ml-12">
              <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={420} height={120} />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center space-x-4 md:flex lg:space-x-6">
+          <nav className="hidden items-center space-x-4 md:flex lg:space-x-6 mr-14">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
