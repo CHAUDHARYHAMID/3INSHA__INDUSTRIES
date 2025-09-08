@@ -55,6 +55,14 @@ const Footer = () => {
                 <span className="text-white">info@inshaindustries.com</span>
             </li>
             </ul>
+             <div className="mt-6">
+                <Image 
+                    src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
+                    alt="Certifications" 
+                    width={200} 
+                    height={50}
+                    data-ai-hint="government logos" />
+             </div>
           </div>
 
           {/* Quick Links */}
