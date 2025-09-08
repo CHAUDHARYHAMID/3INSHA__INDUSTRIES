@@ -61,6 +61,7 @@ const Footer = () => {
                     alt="Certifications" 
                     width={63} 
                     height={16}
+                    className='rounded-lg overflow-hidden'
                     data-ai-hint="government logos" />
              </div>
           </div>
