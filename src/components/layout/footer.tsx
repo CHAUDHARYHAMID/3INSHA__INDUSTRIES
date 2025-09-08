@@ -55,14 +55,6 @@ const Footer = () => {
                 <span className="text-white">info@inshaindustries.com</span>
             </li>
             </ul>
-             <div className="mt-6">
-                <Image 
-                    src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
-                    alt="Certifications" 
-                    width={63} 
-                    height={16}
-                    data-ai-hint="government logos" />
-             </div>
           </div>
 
           {/* Quick Links */}
@@ -86,6 +78,14 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
+            <div className="pt-4">
+                <Image 
+                    src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
+                    alt="Certifications" 
+                    width={63} 
+                    height={16}
+                    data-ai-hint="government logos" />
+             </div>
           </div>
 
         </div>
