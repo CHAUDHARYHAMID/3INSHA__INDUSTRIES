@@ -39,8 +39,8 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold uppercase tracking-wider text-white">Contact Us</h4>
+          <div>
+            <h4 className="text-lg font-semibold uppercase tracking-wider text-white mb-4">Contact Us</h4>
             <ul className="space-y-3">
             <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-accent" />
@@ -55,7 +55,7 @@ const Footer = () => {
                 <span className="text-white">info@inshaindustries.com</span>
             </li>
             </ul>
-             <div>
+             <div className='mt-3'>
                 <Image 
                     src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
                     alt="Certifications" 
