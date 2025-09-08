@@ -20,6 +20,7 @@ const slides = [
     hint: 'industrial valves',
     highlightImage: 'https://i.postimg.cc/26B3bkN9/1-GATE-VALVE-highlight.jpg',
     highlightHint: 'gate valve',
+    objectFit: 'cover',
   },
   {
     title: 'Globe Valves',
@@ -27,6 +28,7 @@ const slides = [
     hint: 'globe valve',
     highlightImage: 'https://i.postimg.cc/3RwZXkFB/2-GLOBE-VALVE-highlighter.jpg',
     highlightHint: 'globe valve',
+    objectFit: 'cover',
   },
   {
     title: 'Non-Return Valves',
@@ -34,6 +36,7 @@ const slides = [
     hint: 'check valve',
     highlightImage: 'https://picsum.photos/300/300',
     highlightHint: 'check valve',
+    objectFit: 'cover',
   },
   {
     title: 'Control Valves',
@@ -41,6 +44,7 @@ const slides = [
     hint: 'control valve',
     highlightImage: 'https://picsum.photos/300/300',
     highlightHint: 'control valve',
+    objectFit: 'cover',
   },
   {
     title: 'Ball Valves',
@@ -48,6 +52,7 @@ const slides = [
     hint: 'ball valve',
     highlightImage: 'https://i.postimg.cc/XqR0TGjK/5th-ball-valve-highlighter-image.png',
     highlightHint: 'ball valve',
+    objectFit: 'contain',
   },
 ];
 
@@ -100,7 +105,8 @@ const HeroSection = () => {
                       data-ai-hint={slide.highlightHint}
                       width={300}
                       height={300}
-                      className="rounded-full object-cover z-10"
+                      className={`rounded-full z-10`}
+                      style={{ objectFit: slide.objectFit as 'cover' | 'contain' }}
                     />
                   </div>
                 </div>
