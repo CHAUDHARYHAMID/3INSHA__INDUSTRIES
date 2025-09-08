@@ -22,8 +22,8 @@ const HeroSection = () => {
       buttonLink: '#products',
     },
     {
-      image: 'https://picsum.photos/1200/800',
-      hint: 'factory interior',
+      image: 'https://i.postimg.cc/k42p3ZPd/2-globe-valve-banner.jpg',
+      hint: 'globe valve',
       title: 'ISO 9001:2015 Certified Quality',
       description:
         'Our commitment to quality ensures every valve meets the highest international standards.',
