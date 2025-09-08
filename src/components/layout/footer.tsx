@@ -55,7 +55,7 @@ const Footer = () => {
                 <span className="text-white">info@inshaindustries.com</span>
             </li>
             </ul>
-             <div className='mt-2 flex items-center gap-x-2'>
+             <div className='mt-1 flex items-center gap-x-2'>
                 <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
                         src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
