@@ -36,7 +36,7 @@ const Header = () => {
     >
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground">
-        <div className="container mx-auto flex h-auto min-h-[2.5rem] items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+        <div className="container mx-auto flex h-auto min-h-[2rem] items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm">
             <div className="flex items-center">
               <Phone className="mr-2 h-4 w-4" />
@@ -55,7 +55,7 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="flex-shrink-0">
+          <Link href="#home" className="flex-shrink-0 ml-20">
              <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={235} height={57} className="h-auto" />
           </Link>
 
