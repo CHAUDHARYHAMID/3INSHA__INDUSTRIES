@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             <h4 className="text-lg font-semibold uppercase tracking-wider text-white">Contact Us</h4>
             <ul className="space-y-1">
             <li className="flex items-start">
