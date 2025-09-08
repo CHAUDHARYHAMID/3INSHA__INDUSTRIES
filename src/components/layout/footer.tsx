@@ -39,23 +39,25 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-2">
-            <h4 className="text-lg font-semibold uppercase tracking-wider text-white">Contact Us</h4>
-            <ul className="space-y-1">
-            <li className="flex items-start">
-                <MapPin className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-accent" />
-                <span className="text-white text-sm">Gala No. 10, Lakdewali Masjid Lane, Andheri - Kurla Rd, opp. M. K. Brothers Industrial Estate, Shivaji Nagar, Saki Naka, Mumbai, Maharashtra 400072</span>
-            </li>
-            <li className="flex items-center">
-                <Phone className="mr-3 h-5 w-5 text-accent" />
-                <span className="text-white">+91 9820409988 | +91 7021181068</span>
-            </li>
-            <li className="flex items-center">
-                <Mail className="mr-3 h-5 w-5 text-accent" />
-                <span className="text-white">info@inshaindustries.com</span>
-            </li>
-            </ul>
-             <div className='mt-2 flex items-center gap-x-2'>
+          <div className="flex flex-col justify-between">
+            <div>
+              <h4 className="text-lg font-semibold uppercase tracking-wider text-white mb-4">Contact Us</h4>
+              <ul className="space-y-2">
+              <li className="flex items-start">
+                  <MapPin className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-accent" />
+                  <span className="text-white text-sm">Gala No. 10, Lakdewali Masjid Lane, Andheri - Kurla Rd, opp. M. K. Brothers Industrial Estate, Shivaji Nagar, Saki Naka, Mumbai, Maharashtra 400072</span>
+              </li>
+              <li className="flex items-center">
+                  <Phone className="mr-3 h-5 w-5 text-accent" />
+                  <span className="text-white">+91 9820409988 | +91 7021181068</span>
+              </li>
+              <li className="flex items-center">
+                  <Mail className="mr-3 h-5 w-5 text-accent" />
+                  <span className="text-white">info@inshaindustries.com</span>
+              </li>
+              </ul>
+            </div>
+             <div className='flex items-center gap-x-2'>
                 <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
                         src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
