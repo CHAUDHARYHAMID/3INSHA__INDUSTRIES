@@ -34,7 +34,7 @@ const slides = [
     title: 'Non-Return Valves',
     image: 'https://i.postimg.cc/zvnpqYd4/3-nrv-banner.png',
     hint: 'check valve',
-    highlightImage: 'https://picsum.photos/300/300',
+    highlightImage: 'https://i.postimg.cc/qMnfNxx4/3-nrv-highlighter-image.jpg',
     highlightHint: 'check valve',
     objectFit: 'cover',
   },
