@@ -63,11 +63,11 @@ const slides = [
     objectFit: 'cover',
   },
   {
-    title: 'Control Valves',
+    title: 'Safety Valves',
     image: 'https://picsum.photos/1920/1080',
-    hint: 'control valve',
+    hint: 'safety valve',
     highlightImage: 'https://picsum.photos/300/300',
-    highlightHint: 'control valve',
+    highlightHint: 'safety valve',
     objectFit: 'cover',
   },
 ];
