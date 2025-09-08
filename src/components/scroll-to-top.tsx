@@ -31,16 +31,16 @@ const ScrollToTop = () => {
 
   return (
     <Button
-      variant="outline"
+      variant="ghost"
       size="icon"
       onClick={scrollToTop}
       className={cn(
-        "fixed bottom-24 right-6 z-50 h-16 w-16 rounded-full bg-primary text-primary-foreground shadow-lg transition-opacity hover:bg-primary/90",
+        "fixed bottom-24 right-6 z-50 h-12 w-12 rounded-full bg-primary/80 text-primary-foreground shadow-lg transition-opacity hover:bg-primary",
         isVisible ? "opacity-100" : "opacity-0"
       )}
       suppressHydrationWarning
     >
-      <ArrowUp className="h-8 w-8" />
+      <ArrowUp className="h-6 w-6" />
       <span className="sr-only">Go to top</span>
     </Button>
   );
