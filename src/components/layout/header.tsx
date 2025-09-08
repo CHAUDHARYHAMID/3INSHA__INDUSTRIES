@@ -43,13 +43,13 @@ const Header = () => {
 
       {/* Main Header */}
       <div className="bg-background">
-        <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:pr-2">
+        <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link href="#home" className="flex-shrink-0">
              <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={420} height={120} />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center space-x-2 md:flex lg:space-x-4">
+          <nav className="hidden items-center md:flex justify-end gap-x-4 lg:gap-x-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
