@@ -49,8 +49,8 @@ const HeroSection = () => {
       buttonLink: '#about',
     },
     {
-      image: 'https://picsum.photos/1200/800',
-      hint: 'global logistics',
+      image: 'https://i.postimg.cc/1tDDqcpq/5-ball-banner-jpeg.jpg',
+      hint: 'ball valve',
       title: 'Global Reach, Local Support',
       description:
         'Serving a diverse clientele across the globe with prompt and efficient service.',
