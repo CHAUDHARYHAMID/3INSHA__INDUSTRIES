@@ -83,7 +83,7 @@ const Footer = () => {
                         className='object-contain h-full w-auto'
                         data-ai-hint="certification logos" />
                 </div>
-                <div className="relative rounded-lg bg-white p-1">
+                <div className="relative h-16 w-auto flex items-center justify-center rounded-lg bg-white p-1">
                     <Image 
                         src="https://i.postimg.cc/DyCBxkz6/4-footer-image.png" 
                         alt="Certifications" 
