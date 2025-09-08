@@ -46,7 +46,7 @@ const slides = [
     title: 'Ball Valves',
     image: 'https://i.postimg.cc/1tDDqcpq/5-ball-banner-jpeg.jpg',
     hint: 'ball valve',
-    highlightImage: 'https://picsum.photos/300/300',
+    highlightImage: 'https://i.postimg.cc/XqR0TGjK/5th-ball-valve-highlighter-image.png',
     highlightHint: 'ball valve',
   },
 ];
