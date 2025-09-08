@@ -56,20 +56,22 @@ const Footer = () => {
             </li>
             </ul>
              <div className='mt-2 flex items-center gap-x-2'>
-                <div className="relative h-16 w-[63px] overflow-hidden rounded-lg">
+                <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
                         src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
                         alt="Certifications" 
-                        fill
-                        className='object-contain'
+                        width={63}
+                        height={63}
+                        className='object-contain h-full w-auto'
                         data-ai-hint="government logos" />
                 </div>
-                <div className="relative h-16 w-[63px] overflow-hidden rounded-lg">
+                <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
                         src="https://i.postimg.cc/25tGr4WZ/2-footer-image.jpg" 
                         alt="Certifications" 
-                        fill
-                        className='object-contain'
+                        width={140}
+                        height={63}
+                        className='object-contain h-full w-auto'
                         data-ai-hint="certification logos" />
                 </div>
              </div>
