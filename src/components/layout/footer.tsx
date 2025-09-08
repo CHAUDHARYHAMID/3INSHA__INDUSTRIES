@@ -55,7 +55,7 @@ const Footer = () => {
                 <span className="text-white">info@inshaindustries.com</span>
             </li>
             </ul>
-             <div className='mt-2'>
+             <div className='mt-2 flex items-center gap-x-2'>
                 <Image 
                     src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
                     alt="Certifications" 
@@ -63,6 +63,13 @@ const Footer = () => {
                     height={16}
                     className='rounded-lg overflow-hidden'
                     data-ai-hint="government logos" />
+                <Image 
+                    src="https://i.postimg.cc/25tGr4WZ/2-footer-image.jpg" 
+                    alt="Certifications" 
+                    width={63} 
+                    height={16}
+                    className='rounded-lg overflow-hidden'
+                    data-ai-hint="certification logos" />
              </div>
           </div>
 
