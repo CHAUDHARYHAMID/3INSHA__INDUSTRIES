@@ -54,9 +54,9 @@ const Header = () => {
 
       {/* Main Header */}
       <div className="bg-background">
-        <div className="mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="flex-shrink-0 lg:ml-40">
-             <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={200} height={56} className="h-14 w-auto" />
+        <div className="mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+          <Link href="#home" className="flex-shrink-0 lg:ml-48">
+             <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={200} height={56} className="h-16 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -90,7 +90,7 @@ const Header = () => {
                 <div className="flex h-full flex-col">
                   <div className="flex items-center justify-between border-b p-4">
                      <Link href="#home" onClick={() => setMobileMenuOpen(false)}>
-                        <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={160} height={40} />
+                        <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={160} height={40} className="h-12 w-auto" />
                     </Link>
                     <SheetTrigger asChild>
                       <Button variant="ghost" size="icon">
