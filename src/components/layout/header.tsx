@@ -44,8 +44,8 @@ const Header = () => {
       {/* Main Header */}
       <div className="bg-background">
         <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="flex-shrink-0 md:ml-56">
-             <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={320} height={90} />
+          <Link href="#home" className="flex-shrink-0 md:ml-40">
+             <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={420} height={120} />
           </Link>
 
           {/* Desktop Navigation */}
