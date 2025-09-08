@@ -59,8 +59,8 @@ const Footer = () => {
                 <Image 
                     src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
                     alt="Certifications" 
-                    width={100} 
-                    height={25}
+                    width={50} 
+                    height={13}
                     data-ai-hint="government logos" />
              </div>
           </div>
