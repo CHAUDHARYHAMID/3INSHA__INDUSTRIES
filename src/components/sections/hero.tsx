@@ -39,7 +39,7 @@ const slides = [
     title: 'Control Valves',
     image: 'https://picsum.photos/1920/1080',
     hint: 'control valve',
-    highlightImage: 'https://i.postimg.cc/qvVqyWxD/4-control-valve-highlighter.jpg',
+    highlightImage: 'https://picsum.photos/300/300',
     highlightHint: 'control valve',
   },
   {
