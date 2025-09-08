@@ -1,6 +1,5 @@
 import AboutSection from '@/components/sections/about';
 import CallToActionSection from '@/components/sections/call-to-action';
-import ContactSection from '@/components/sections/contact';
 import HeroSection from '@/components/sections/hero';
 import ProductsSection from '@/components/sections/products';
 import WhyChooseUsSection from '@/components/sections/why-choose-us';
@@ -12,7 +11,6 @@ export default function Home() {
       <AboutSection />
       <ProductsSection />
       <WhyChooseUsSection />
-      <ContactSection />
       <CallToActionSection />
     </>
   );

@@ -8,7 +8,6 @@ const Footer = () => {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About Us' },
     { href: '#products', label: 'Products' },
-    { href: '#contact', label: 'Contact' },
   ];
 
   const socialLinks = [
