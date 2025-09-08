@@ -16,6 +16,7 @@ const Header = () => {
     { href: '#about', label: 'ABOUT US' },
     { href: '#products', label: 'PRODUCTS', icon: <Plus className="h-4 w-4" /> },
     { href: '#e-catalogue', label: 'E-CATELOGUE' },
+    { href: '#contact', label: 'CONTACT US' },
   ];
 
   return (
