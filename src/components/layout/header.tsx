@@ -30,13 +30,13 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-shadow duration-300 ${
+      className={`w-full transition-shadow duration-300 ${
         isScrolled ? 'shadow-lg' : ''
       }`}
     >
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground">
-        <div className="mx-auto flex h-auto min-h-[3rem] items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+        <div className="container mx-auto flex h-auto min-h-[3rem] items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm">
             <div className="flex items-center">
               <Phone className="mr-2 h-4 w-4" />
@@ -54,9 +54,9 @@ const Header = () => {
 
       {/* Main Header */}
       <div className="bg-background">
-        <div className="mx-auto flex h-40 items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="#home" className="flex-shrink-0 ml-20">
-             <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={500} height={146} className="h-[146px] w-[500px]" />
+        <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
+          <Link href="#home" className="flex-shrink-0">
+             <Image src="https://i.postimg.cc/sgXrrChv/Whats-App-Image-2025-09-05-at-18-39-09-fd785157.jpg" alt="Insha Industries Logo" width={235} height={57} className="h-auto" />
           </Link>
 
           {/* Desktop Navigation */}
