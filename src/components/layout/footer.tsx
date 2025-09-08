@@ -55,7 +55,7 @@ const Footer = () => {
                 <span className="text-white">info@inshaindustries.com</span>
             </li>
             </ul>
-             <div className="pt-4">
+             <div>
                 <Image 
                     src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
                     alt="Certifications" 
