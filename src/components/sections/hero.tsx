@@ -114,7 +114,15 @@ const HeroSection = () => {
                     </div>
                   </div>
                   <div className="hidden md:flex items-center justify-center relative">
-                    <div className="absolute w-[380px] h-[380px] rounded-full border-4 border-accent" />
+                    <div
+                        className="absolute w-[380px] h-[380px] rounded-full p-1"
+                        style={{
+                            backgroundImage: 'conic-gradient(#A3494E, #3C8379, #A3494E)',
+                        }}
+                    >
+                        <div className="w-full h-full bg-background rounded-full" />
+                    </div>
+
                     {slide.title === 'Ball Valves' ? (
                       <div className="w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center z-10">
                         <Image
