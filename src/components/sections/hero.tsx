@@ -56,7 +56,7 @@ const slides = [
   },
   {
     title: 'Butterfly Valves',
-    image: 'https://picsum.photos/1920/1080',
+    image: 'https://i.postimg.cc/cC5Xr7dn/last-butterfly-banner-jpeg.jpg',
     hint: 'butterfly valve',
     highlightImage: 'https://i.postimg.cc/c1TJPgbN/6th-butterfly-highlighter.jpg',
     highlightHint: 'butterfly valve',
