@@ -115,7 +115,11 @@ const HeroSection = () => {
                   </div>
                   <div className="hidden md:flex items-center justify-center relative">
                     <div
-                        className="absolute w-[380px] h-[380px] rounded-full p-2 bg-primary"
+                        className="absolute w-[380px] h-[380px] rounded-full p-2"
+                        style={{
+                            backgroundImage: 'conic-gradient(maroon 25%, hsl(var(--primary)) 0 75%)',
+                            transform: 'rotate(-45deg)',
+                        }}
                     >
                         <div className="w-full h-full bg-background rounded-full" />
                     </div>
