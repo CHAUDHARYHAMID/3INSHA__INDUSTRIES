@@ -152,10 +152,10 @@ const HeroSection = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-white/20 hover:bg-white/30 border-white/50">
+        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-white/20 hover:bg-primary border-white/50">
            <ArrowLeft className="h-6 w-6" />
         </CarouselPrevious>
-        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-white/20 hover:bg-white/30 border-white/50">
+        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-white/20 hover:bg-primary border-white/50">
             <ArrowRight className="h-6 w-6" />
         </CarouselNext>
       </Carousel>
