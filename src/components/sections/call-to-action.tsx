@@ -6,6 +6,11 @@ const CallToActionSection = () => {
   return (
     <section id="call-to-action" className="bg-muted py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-8 overflow-hidden whitespace-nowrap">
+            <h3 className="animate-marquee inline-block text-lg font-semibold text-primary">
+              INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES
+            </h3>
+        </div>
         <div className="flex flex-col items-center justify-between gap-6 rounded-lg bg-card p-8 text-center shadow-lg md:flex-row md:text-left">
           <div className="flex-1">
             <h2 className="text-2xl font-bold text-primary sm:text-3xl">
