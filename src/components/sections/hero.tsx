@@ -66,9 +66,9 @@ const slides = [
     title: 'Safety Valves',
     image: 'https://picsum.photos/1920/1080',
     hint: 'safety valve',
-    highlightImage: 'https://picsum.photos/300/300',
+    highlightImage: 'https://i.postimg.cc/VLDfvJyW/safety-valve-highlighter.png',
     highlightHint: 'safety valve',
-    objectFit: 'cover',
+    objectFit: 'contain',
   },
 ];
 
@@ -123,7 +123,7 @@ const HeroSection = () => {
                         <div className="w-full h-full bg-background rounded-full" />
                     </div>
 
-                    {slide.title === 'Ball Valves' || slide.title === 'Butterfly Valves' ? (
+                    {slide.title === 'Ball Valves' || slide.title === 'Butterfly Valves' || slide.title === 'Safety Valves' ? (
                       <div className="w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center z-10">
                         <Image
                           src={slide.highlightImage}
