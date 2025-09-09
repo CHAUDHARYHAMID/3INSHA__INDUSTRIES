@@ -117,8 +117,7 @@ const HeroSection = () => {
                     <div
                         className="absolute w-[380px] h-[380px] rounded-full p-2"
                         style={{
-                            backgroundImage: 'conic-gradient(maroon 25%, hsl(var(--primary)) 0 75%)',
-                            transform: 'rotate(-45deg)',
+                            backgroundImage: 'conic-gradient(hsl(var(--primary)) 0 270deg, maroon 270deg 360deg)',
                         }}
                     >
                         <div className="w-full h-full bg-background rounded-full" />
