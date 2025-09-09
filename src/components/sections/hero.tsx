@@ -114,15 +114,15 @@ const HeroSection = () => {
                     </div>
                   </div>
                   <div className="hidden md:flex items-center justify-center relative">
-                    <div className="absolute w-[320px] h-[320px] rounded-full border-4 border-accent" />
+                    <div className="absolute w-[340px] h-[340px] rounded-full border-4 border-accent" />
                     {slide.title === 'Ball Valves' ? (
-                      <div className="w-[300px] h-[300px] rounded-full bg-white flex items-center justify-center z-10">
+                      <div className="w-[320px] h-[320px] rounded-full bg-white flex items-center justify-center z-10">
                         <Image
                           src={slide.highlightImage}
                           alt={`${slide.title} Highlight`}
                           data-ai-hint={slide.highlightHint}
-                          width={200}
-                          height={200}
+                          width={220}
+                          height={220}
                           className="z-20"
                           style={{ objectFit: slide.objectFit as 'cover' | 'contain' }}
                         />
@@ -132,8 +132,8 @@ const HeroSection = () => {
                         src={slide.highlightImage}
                         alt={`${slide.title} Highlight`}
                         data-ai-hint={slide.highlightHint}
-                        width={300}
-                        height={300}
+                        width={320}
+                        height={320}
                         className={'rounded-full z-10'}
                         style={{ objectFit: slide.objectFit as 'cover' | 'contain' }}
                       />
