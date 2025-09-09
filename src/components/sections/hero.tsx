@@ -40,7 +40,7 @@ const slides = [
   },
   {
     title: 'Forged Steel Valves',
-    image: 'https://i.postimg.cc/YCXCjRfr/4th-banner-forged.jpg',
+    image: 'https://i.postimg.cc/vZ78L49j/4th-forged-steel-banner.jpg',
     hint: 'forged steel valve',
     highlightImage: 'https://i.postimg.cc/L6H3g14g/4th-forged-highlighter.jpg',
     highlightHint: 'forged steel valve',
