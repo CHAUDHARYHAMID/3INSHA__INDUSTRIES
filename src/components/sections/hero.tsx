@@ -121,8 +121,8 @@ const HeroSection = () => {
                           src={slide.highlightImage}
                           alt={`${slide.title} Highlight`}
                           data-ai-hint={slide.highlightHint}
-                          width={240}
-                          height={240}
+                          width={250}
+                          height={250}
                           className="z-20"
                           style={{ objectFit: slide.objectFit as 'cover' | 'contain' }}
                         />
