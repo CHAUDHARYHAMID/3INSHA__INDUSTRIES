@@ -5,7 +5,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 import WhatsAppFAB from '@/components/whatsapp-fab';
-import ScrollToTop from '@/components/scroll-to-top';
+import CallFAB from '@/components/call-fab';
 
 export const metadata: Metadata = {
   title: 'Insha Industries',
@@ -36,7 +36,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppFAB />
-        <ScrollToTop />
+        <CallFAB />
         <Toaster />
       </body>
     </html>
