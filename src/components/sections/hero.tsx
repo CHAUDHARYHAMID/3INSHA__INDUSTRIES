@@ -44,7 +44,7 @@ const slides = [
     hint: 'forged steel valve',
     highlightImage: 'https://i.postimg.cc/1thBF5xv/forged-steel-highlighter-image.jpg',
     highlightHint: 'forged steel valve',
-    objectFit: 'cover',
+    objectFit: 'contain',
   },
   {
     title: 'Ball Valves',
@@ -123,7 +123,7 @@ const HeroSection = () => {
                         <div className="w-full h-full bg-background rounded-full" />
                     </div>
 
-                    {slide.title === 'Ball Valves' || slide.title === 'Butterfly Valves' || slide.title === 'Safety Valves' ? (
+                    {slide.title === 'Ball Valves' || slide.title === 'Butterfly Valves' || slide.title === 'Safety Valves' || slide.title === 'Forged Steel Valves' ? (
                       <div className="w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center z-10">
                         <Image
                           src={slide.highlightImage}
