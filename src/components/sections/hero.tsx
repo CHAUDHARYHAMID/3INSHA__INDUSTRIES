@@ -64,7 +64,7 @@ const slides = [
   },
   {
     title: 'Safety Valves',
-    image: 'https://picsum.photos/1920/1080',
+    image: 'https://i.postimg.cc/XqgCpn3B/safety-valve-bg.jpg',
     hint: 'safety valve',
     highlightImage: 'https://i.postimg.cc/VLDfvJyW/safety-valve-highlighter.png',
     highlightHint: 'safety valve',
