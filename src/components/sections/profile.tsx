@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ProfileSection = () => {
   return (
-    <section id="profile" className="py-16 lg:py-24 bg-primary text-white border-b-8 border-white">
+    <section id="profile" className="pt-16 lg:pt-24 pb-12 bg-primary text-white border-b-8 border-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="w-full h-full flex items-center justify-center">
