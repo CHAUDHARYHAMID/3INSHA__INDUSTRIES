@@ -47,7 +47,7 @@ const ScrollingBanner = () => {
       </div>
       <div
         className={cn(
-          'absolute top-0 flex whitespace-nowrap',
+          'absolute top-0 flex whitespace-nowrap py-3',
           isIntersecting ? 'animate-marquee2' : ''
         )}
       >
