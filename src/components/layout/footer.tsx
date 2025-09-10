@@ -99,6 +99,11 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
+               <li>
+                  <Link href="#contact-section" className="text-white transition-colors hover:text-accent">
+                    Contact Us
+                  </Link>
+                </li>
             </ul>
              <div className="flex space-x-3 pt-4">
               {socialLinks.map(({ Icon, href, className }, index) => (
