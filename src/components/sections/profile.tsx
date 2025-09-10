@@ -7,9 +7,9 @@ const ProfileSection = () => {
     <section id="profile" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative w-full h-[400px] flex items-center justify-center">
+          <div className="flex items-center justify-center w-full h-[400px]">
             <svg
-              className="absolute w-full h-full"
+              className="w-full h-full"
               viewBox="0 0 500 500"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -25,6 +25,17 @@ const ProfileSection = () => {
                   />
                 </clipPath>
               </defs>
+              <g clipPath="url(#morph-clip)">
+                <image
+                  href="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
+                  x="0"
+                  y="0"
+                  width="500"
+                  height="500"
+                  preserveAspectRatio="xMidYMid slice"
+                  data-ai-hint="industrial valves"
+                />
+              </g>
               <path
                 className="morph-path"
                 d="M 433,250 C 433,354 354,433 250,433 146,433 67,354 67,250 67,146 146,67 250,67 354,67 433,146 433,250 Z"
@@ -33,18 +44,6 @@ const ProfileSection = () => {
                 fill="none"
               />
             </svg>
-            <div
-              className="relative h-full w-full"
-              style={{ clipPath: 'url(#morph-clip)' }}
-            >
-              <Image
-                src="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
-                alt="Insha Industries Profile"
-                fill
-                className="object-cover"
-                data-ai-hint="industrial valves"
-              />
-            </div>
           </div>
           <div className="text-left">
             <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl mb-6 uppercase">
