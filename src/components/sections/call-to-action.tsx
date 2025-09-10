@@ -5,11 +5,20 @@ import Link from 'next/link';
 const CallToActionSection = () => {
   return (
     <section id="call-to-action">
-      <div className="bg-primary py-3 overflow-hidden whitespace-nowrap">
-        <h3 className="animate-marquee inline-block text-lg font-semibold text-primary-foreground">
-          <span className="mx-4">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
-          <span className="mx-4">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
-        </h3>
+      <div className="relative flex overflow-x-hidden bg-primary py-3 text-primary-foreground">
+        <div className="animate-marquee whitespace-nowrap">
+          <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+          <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+          <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+          <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+        </div>
+
+        <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
+          <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+          <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+          <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+          <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+        </div>
       </div>
       <div className="bg-muted py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
