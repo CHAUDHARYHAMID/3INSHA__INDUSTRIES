@@ -89,7 +89,7 @@ const ProductsSection = () => {
                     src={offering.image}
                     alt={offering.category}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     data-ai-hint={offering.hint}
                 />
               </div>
