@@ -7,7 +7,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="text-left">
-            <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl mb-6 uppercase">
+            <h2 className="text-xl font-extrabold tracking-tight text-primary mb-6 uppercase">
               About Us
             </h2>
             <p className="text-lg text-muted-foreground">
