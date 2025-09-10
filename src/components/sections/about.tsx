@@ -3,7 +3,7 @@ import { Target, Eye } from 'lucide-react';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 lg:py-24 bg-card">
+    <section id="about" className="py-8 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="text-left">
