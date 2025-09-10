@@ -10,7 +10,7 @@ const ProfileSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-12 items-center">
           <div className="w-full h-full flex items-center justify-center">
             <svg
-                className="w-[450px] h-[450px]"
+                className="w-[500px] h-[500px]"
                 viewBox="0 0 500 500"
                 xmlns="http://www.w3.org/2000/svg"
             >
