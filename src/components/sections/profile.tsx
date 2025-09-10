@@ -6,46 +6,27 @@ import { Separator } from '../ui/separator';
 
 const ProfileSection = () => {
   return (
-    <section id="profile" className="pt-16 lg:pt-24 pb-48 bg-primary text-white border-b-8 border-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="profile" className="relative pt-16 lg:pt-24 pb-48 text-white border-b-8 border-white">
+      <Image
+        src="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
+        alt="Industrial valves background"
+        layout="fill"
+        objectFit="cover"
+        className="z-0"
+        data-ai-hint="industrial valves"
+      />
+      <div className="absolute inset-0 bg-primary/80 z-10" />
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="w-full h-full flex items-center justify-center">
-            <svg
-                className="w-[500px] h-[500px]"
-                viewBox="0 0 500 500"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style={{ stopColor: '#004aad' }} />
-                        <stop offset="100%" style={{ stopColor: '#fe3030' }} />
-                    </linearGradient>
-                    <clipPath id="morph-clip">
-                    <path
-                        className="morph-path"
-                        d="M 433,250 C 433,354 354,433 250,433 146,433 67,354 67,250 67,146 146,67 250,67 354,67 433,146 433,250 Z"
-                    />
-                    </clipPath>
-                </defs>
-                <g clipPath="url(#morph-clip)">
-                    <image
-                    href="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
-                    x="0"
-                    y="0"
-                    width="500"
-                    height="500"
-                    preserveAspectRatio="xMidYMid slice"
-                    data-ai-hint="industrial valves"
-                    />
-                </g>
-                <path
-                    className="morph-path"
-                    d="M 433,250 C 433,354 354,433 250,433 146,433 67,354 67,250 67,146 146,67 250,67 354,67 433,146 433,250 Z"
-                    stroke="url(#gradient)"
-                    strokeWidth="10"
-                    fill="none"
-                />
-            </svg>
+             <Image
+                src="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
+                alt="Profile Image"
+                width={500}
+                height={500}
+                className="rounded-lg shadow-2xl"
+                data-ai-hint="industrial equipment"
+              />
           </div>
 
           <div className="text-left">
