@@ -93,14 +93,14 @@ const ProductsSection = () => {
                     data-ai-hint={offering.hint}
                 />
               </div>
-              <div className="flex flex-col flex-grow p-6 justify-between">
-                <CardHeader>
+              <div className="flex flex-col flex-grow justify-between">
+                <CardHeader className="p-4">
                   <CardTitle className="text-xl font-bold text-primary">{offering.category}</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-grow">
+                <CardContent className="flex-grow p-4 pt-0">
                   <CardDescription className="text-sm text-muted-foreground mt-2 flex-grow">{offering.description}</CardDescription>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="p-4 pt-0">
                   <Button asChild variant="link" className="w-full">
                       <Link href="#">
                           Read More
