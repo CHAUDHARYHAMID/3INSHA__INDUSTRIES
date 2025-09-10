@@ -83,16 +83,7 @@ const ProductsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col">
-              <div className="relative w-full aspect-square overflow-hidden">
-                <Image
-                  src={offering.image}
-                  alt={offering.category}
-                  fill
-                  data-ai-hint={offering.hint}
-                  className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                />
-              </div>
+            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col p-6 justify-between">
                <CardHeader>
                 <CardTitle className="text-xl font-bold text-primary">{offering.category}</CardTitle>
               </CardHeader>
