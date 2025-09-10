@@ -1,24 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
 import Link from 'next/link';
+import ScrollingBanner from '../scrolling-banner';
 
 const CallToActionSection = () => {
-  const brands = "Audco, KSB, L&T, AIL, BDK, BHEL, Leader, Forbes Marshal, Uniklinger, Spirax, Sarco and more.";
-  const leadingText = "INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES LIKE";
-
   return (
     <section id="call-to-action">
-      <div className="relative flex items-center overflow-x-hidden bg-primary py-3 text-primary-foreground">
-        <div className="animate-marquee whitespace-nowrap">
-          <span className="mx-4 text-lg font-semibold">{leadingText} {brands}</span>
-          <span className="mx-4 text-lg font-semibold">{leadingText} {brands}</span>
-        </div>
-
-        <div className="absolute top-0 flex items-center animate-marquee2 whitespace-nowrap">
-           <span className="mx-4 text-lg font-semibold">{leadingText} {brands}</span>
-           <span className="mx-4 text-lg font-semibold">{leadingText} {brands}</span>
-        </div>
-      </div>
+      <ScrollingBanner />
       <div className="bg-muted py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-between gap-6 rounded-lg bg-card p-8 text-center shadow-lg md:flex-row md:text-left">
