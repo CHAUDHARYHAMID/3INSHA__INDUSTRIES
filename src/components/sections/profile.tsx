@@ -7,45 +7,43 @@ const ProfileSection = () => {
     <section id="profile" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="flex items-center justify-center w-full h-full">
-            <div className="relative w-[450px] h-[450px] flex items-center justify-center">
-                <svg
-                    className="w-full h-full"
-                    viewBox="0 0 500 500"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <defs>
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{ stopColor: 'hsl(var(--primary))' }} />
-                        <stop offset="100%" style={{ stopColor: 'hsl(var(--destructive))' }} />
-                        </linearGradient>
-                        <clipPath id="morph-clip">
-                        <path
-                            className="morph-path"
-                            d="M 433,250 C 433,354 354,433 250,433 146,433 67,354 67,250 67,146 146,67 250,67 354,67 433,146 433,250 Z"
-                        />
-                        </clipPath>
-                    </defs>
-                    <g clipPath="url(#morph-clip)">
-                        <image
-                        href="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
-                        x="0"
-                        y="0"
-                        width="500"
-                        height="500"
-                        preserveAspectRatio="xMidYMid slice"
-                        data-ai-hint="industrial valves"
-                        />
-                    </g>
+          <div className="relative w-[450px] h-[450px] flex items-center justify-center mx-auto">
+            <svg
+                className="w-full h-full"
+                viewBox="0 0 500 500"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: 'hsl(var(--primary))' }} />
+                    <stop offset="100%" style={{ stopColor: 'hsl(var(--destructive))' }} />
+                    </linearGradient>
+                    <clipPath id="morph-clip">
                     <path
                         className="morph-path"
                         d="M 433,250 C 433,354 354,433 250,433 146,433 67,354 67,250 67,146 146,67 250,67 354,67 433,146 433,250 Z"
-                        stroke="url(#gradient)"
-                        strokeWidth="8"
-                        fill="none"
                     />
-                </svg>
-            </div>
+                    </clipPath>
+                </defs>
+                <g clipPath="url(#morph-clip)">
+                    <image
+                    href="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
+                    x="0"
+                    y="0"
+                    width="500"
+                    height="500"
+                    preserveAspectRatio="xMidYMid slice"
+                    data-ai-hint="industrial valves"
+                    />
+                </g>
+                <path
+                    className="morph-path"
+                    d="M 433,250 C 433,354 354,433 250,433 146,433 67,354 67,250 67,146 146,67 250,67 354,67 433,146 433,250 Z"
+                    stroke="url(#gradient)"
+                    strokeWidth="8"
+                    fill="none"
+                />
+            </svg>
           </div>
           <div className="text-left">
             <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl mb-6 uppercase">
