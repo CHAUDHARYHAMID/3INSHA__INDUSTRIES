@@ -5,7 +5,7 @@ import Link from 'next/link';
 const CallToActionSection = () => {
   return (
     <section id="call-to-action">
-      <div className="relative flex overflow-x-hidden bg-primary py-3 text-primary-foreground">
+      <div className="relative flex items-center overflow-x-hidden bg-primary py-3 text-primary-foreground">
         <div className="animate-marquee whitespace-nowrap">
           <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
           <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
@@ -13,7 +13,7 @@ const CallToActionSection = () => {
           <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
         </div>
 
-        <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
+        <div className="absolute top-0 flex items-center animate-marquee2 whitespace-nowrap">
           <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
           <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
           <span className="mx-4 text-lg font-semibold">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
