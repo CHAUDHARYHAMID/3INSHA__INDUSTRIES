@@ -13,7 +13,6 @@ export default function Home() {
       <ProductsSection />
       <WhyChooseUsSection />
       <ProfileSection />
-      <div className="h-16 bg-muted" />
       <CallToActionSection />
     </>
   );
