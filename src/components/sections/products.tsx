@@ -45,13 +45,13 @@ const ProductsSection = () => {
         },
         {
             category: "Butterfly Valves",
-            image: "https://picsum.photos/seed/bfv1/400/400",
+            image: "https://i.postimg.cc/c1TJPgbN/6th-butterfly-highlighter.jpg",
             hint: "butterfly valve",
             description: "Our butterfly valves offer a compact design for efficient flow control in large-volume applications like water and HVAC systems.",
         },
         {
             category: "Forged Steel Valves",
-            image: "https://picsum.photos/seed/fsv1/400/400",
+            image: "https://i.postimg.cc/1thBF5xv/forged-steel-highlighter-image.jpg",
             hint: "forged steel",
             description: "For high-pressure and high-temperature services, our forged steel valves provide unmatched strength and durability.",
         },
