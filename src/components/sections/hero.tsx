@@ -15,7 +15,7 @@ import {
 
 const slides = [
   {
-    title: 'Gate Valves',
+    title: 'GATE VALVES',
     image: 'https://i.postimg.cc/kGZYgy9t/1-gate-valve-banner-jpeg.jpg',
     hint: 'industrial valves',
     highlightImage: 'https://i.postimg.cc/26B3bkN9/1-GATE-VALVE-highlight.jpg',
@@ -23,7 +23,7 @@ const slides = [
     objectFit: 'cover',
   },
   {
-    title: 'Globe Valves',
+    title: 'GLOBE VALVES',
     image: 'https://i.postimg.cc/k42p3ZPd/2-globe-valve-banner.jpg',
     hint: 'globe valve',
     highlightImage: 'https://i.postimg.cc/3RwZXkFB/2-GLOBE-VALVE-highlighter.jpg',
@@ -31,7 +31,7 @@ const slides = [
     objectFit: 'cover',
   },
   {
-    title: 'Non-Return Valves',
+    title: 'NON-RETURN VALVES',
     image: 'https://i.postimg.cc/zvnpqYd4/3-nrv-banner.png',
     hint: 'check valve',
     highlightImage: 'https://i.postimg.cc/qMnfNxx4/3-nrv-highlighter-image.jpg',
@@ -39,7 +39,7 @@ const slides = [
     objectFit: 'cover',
   },
   {
-    title: 'Forged Steel Valves',
+    title: 'FORGED STEEL VALVES',
     image: 'https://i.postimg.cc/vZ78L49j/4th-forged-steel-banner.jpg',
     hint: 'forged steel valve',
     highlightImage: 'https://i.postimg.cc/1thBF5xv/forged-steel-highlighter-image.jpg',
@@ -47,7 +47,7 @@ const slides = [
     objectFit: 'contain',
   },
   {
-    title: 'Ball Valves',
+    title: 'BALL VALVES',
     image: 'https://i.postimg.cc/1tDDqcpq/5-ball-banner-jpeg.jpg',
     hint: 'ball valve',
     highlightImage: 'https://i.postimg.cc/g2SPWT2k/5th-ball-highlighter.png',
@@ -55,7 +55,7 @@ const slides = [
     objectFit: 'contain',
   },
   {
-    title: 'Butterfly Valves',
+    title: 'BUTTERFLY VALVES',
     image: 'https://i.postimg.cc/cC5Xr7dn/last-butterfly-banner-jpeg.jpg',
     hint: 'butterfly valve',
     highlightImage: 'https://i.postimg.cc/c1TJPgbN/6th-butterfly-highlighter.jpg',
@@ -63,7 +63,7 @@ const slides = [
     objectFit: 'contain',
   },
   {
-    title: 'Safety Valves',
+    title: 'SAFETY VALVES',
     image: 'https://i.postimg.cc/XqgCpn3B/safety-valve-bg.jpg',
     hint: 'safety valve',
     highlightImage: 'https://i.postimg.cc/VLDfvJyW/safety-valve-highlighter.png',
@@ -123,7 +123,7 @@ const HeroSection = () => {
                         <div className="w-full h-full bg-background rounded-full" />
                     </div>
 
-                    {slide.title === 'Ball Valves' || slide.title === 'Butterfly Valves' || slide.title === 'Safety Valves' || slide.title === 'Forged Steel Valves' ? (
+                    {slide.title === 'BALL VALVES' || slide.title === 'BUTTERFLY VALVES' || slide.title === 'SAFETY VALVES' || slide.title === 'FORGED STEEL VALVES' ? (
                       <div className="w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center z-10">
                         <Image
                           src={slide.highlightImage}
