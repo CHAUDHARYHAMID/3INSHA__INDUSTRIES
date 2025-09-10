@@ -5,7 +5,7 @@ import ScrollingBanner from '../scrolling-banner';
 
 const CallToActionSection = () => {
   return (
-    <section id="call-to-action" className="mt-16">
+    <section id="call-to-action">
       <ScrollingBanner />
       <div className="bg-muted py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
