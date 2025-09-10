@@ -10,7 +10,13 @@ const ScrollingBanner = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIntersecting(entry.isIntersecting);
+        // Start animation when element is intersecting, but don't stop it.
+        // This prevents jarring resets when scrolling away and back.
+        if (entry.isIntersecting) {
+            setIntersecting(true);
+            // We can disconnect the observer once it has been triggered.
+            observer.disconnect();
+        }
       },
       { rootMargin: '0px' }
     );
@@ -22,6 +28,7 @@ const ScrollingBanner = () => {
 
     return () => {
       if (currentRef) {
+        // In case component unmounts before intersecting
         observer.unobserve(currentRef);
       }
     };
@@ -34,21 +41,12 @@ const ScrollingBanner = () => {
   return (
     <div
       ref={ref}
-      className="relative flex overflow-hidden bg-primary py-3 text-lg font-semibold text-primary-foreground"
+      className="relative flex overflow-x-hidden bg-primary py-3 text-lg font-semibold text-primary-foreground group"
     >
       <div
         className={cn(
           'flex whitespace-nowrap',
           isIntersecting ? 'animate-marquee' : ''
-        )}
-      >
-        <span className="mx-4">{fullText}</span>
-        <span className="mx-4">{fullText}</span>
-      </div>
-      <div
-        className={cn(
-          'absolute top-0 flex whitespace-nowrap py-3',
-          isIntersecting ? 'animate-marquee2' : ''
         )}
       >
         <span className="mx-4">{fullText}</span>
