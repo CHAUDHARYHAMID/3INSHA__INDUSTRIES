@@ -21,8 +21,8 @@ const ProfileSection = () => {
              <Image
                 src="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
                 alt="Profile Image"
-                width={500}
-                height={500}
+                width={650}
+                height={650}
                 className="rounded-lg shadow-2xl"
                 data-ai-hint="industrial equipment"
               />
