@@ -47,8 +47,8 @@ const ProfileSection = () => {
             </svg>
           </div>
 
-          <Separator orientation="vertical" className="h-full bg-black hidden lg:block" />
-          <Separator orientation="horizontal" className="w-full bg-black lg:hidden" />
+          <Separator orientation="vertical" className="h-full w-0.5 bg-black hidden lg:block" />
+          <Separator orientation="horizontal" className="w-full h-0.5 bg-black lg:hidden" />
 
           <div className="text-left">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-6 uppercase text-white">
