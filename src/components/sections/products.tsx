@@ -57,7 +57,7 @@ const ProductsSection = () => {
         },
         {
             category: "Strainers",
-            image: "https://picsum.photos/seed/s1/400/400",
+            image: "https://i.postimg.cc/tCyh8Fsk/STRAINER-highlight.png",
             hint: "industrial strainer",
             description: "Protect your equipment and pipelines with our Y-type and Basket type strainers, designed to filter out debris effectively.",
         },
