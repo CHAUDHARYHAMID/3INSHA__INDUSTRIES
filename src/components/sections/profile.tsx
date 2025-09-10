@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -15,9 +16,9 @@ const ProfileSection = () => {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: 'hsl(var(--primary))' }} />
-                    <stop offset="100%" style={{ stopColor: 'maroon' }} />
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style={{ stopColor: '#004aad' }} />
+                        <stop offset="100%" style={{ stopColor: '#fe3030' }} />
                     </linearGradient>
                     <clipPath id="morph-clip">
                     <path
@@ -41,7 +42,7 @@ const ProfileSection = () => {
                     className="morph-path"
                     d="M 433,250 C 433,354 354,433 250,433 146,433 67,354 67,250 67,146 146,67 250,67 354,67 433,146 433,250 Z"
                     stroke="url(#gradient)"
-                    strokeWidth="8"
+                    strokeWidth="10"
                     fill="none"
                 />
             </svg>
