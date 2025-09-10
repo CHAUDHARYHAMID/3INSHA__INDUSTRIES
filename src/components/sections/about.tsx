@@ -7,11 +7,11 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="text-left">
-            <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl mb-6">
-              About Insha Industries
+            <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl mb-6 uppercase">
+              About Us
             </h2>
             <p className="text-lg text-muted-foreground">
-              Insha Industries, an ISO 9001:2015 certified company, specializes in the manufacturing and trading of industrial valves. With a commitment to quality and innovation, we cater to diverse industrial needs by providing a wide range of valves, including gate valves, globe valves, non-return valves, control valves, pneumatic valves, ball valves, butterfly valves, strainers, and special service valves like safety relief valves, pressure reducing valves, and breather valves. Our state-of-the-art manufacturing facilities, stringent quality control measures, and customer-centric approach have established us as a trusted name in the valve industry.
+              <strong className="text-primary">Insha Industries</strong>, an ISO 9001:2015 certified company, specializes in the manufacturing and trading of industrial valves. With a commitment to quality and innovation, we cater to diverse industrial needs by providing a wide range of valves, including gate valves, globe valves, non-return valves, control valves, pneumatic valves, ball valves, butterfly valves, strainers, and special service valves like safety relief valves, pressure reducing valves, and breather valves. Our state-of-the-art manufacturing facilities, stringent quality control measures, and customer-centric approach have established us as a trusted name in the valve industry.
             </p>
           </div>
           <div className="relative h-80 w-full lg:h-full min-h-[300px] rounded-lg overflow-hidden shadow-lg">
