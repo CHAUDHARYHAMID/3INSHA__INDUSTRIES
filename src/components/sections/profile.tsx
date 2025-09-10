@@ -16,7 +16,7 @@ const ProfileSection = () => {
                 <defs>
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style={{ stopColor: 'hsl(var(--primary))' }} />
-                    <stop offset="100%" style={{ stopColor: 'hsl(var(--destructive))' }} />
+                    <stop offset="100%" style={{ stopColor: 'maroon' }} />
                     </linearGradient>
                     <clipPath id="morph-clip">
                     <path
