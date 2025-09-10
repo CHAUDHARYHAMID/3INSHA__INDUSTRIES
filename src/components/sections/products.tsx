@@ -83,21 +83,32 @@ const ProductsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col p-6 justify-between">
-               <CardHeader>
-                <CardTitle className="text-xl font-bold text-primary">{offering.category}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <CardDescription className="text-sm text-muted-foreground mt-2 flex-grow">{offering.description}</CardDescription>
-              </CardContent>
-              <CardFooter>
-                <Button asChild variant="link" className="w-full">
-                    <Link href="#">
-                        Read More
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                </Button>
-              </CardFooter>
+            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col">
+              <div className="relative h-60 w-full">
+                <Image
+                    src={offering.image}
+                    alt={offering.category}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={offering.hint}
+                />
+              </div>
+              <div className="flex flex-col flex-grow p-6 justify-between">
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold text-primary">{offering.category}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <CardDescription className="text-sm text-muted-foreground mt-2 flex-grow">{offering.description}</CardDescription>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="link" className="w-full">
+                      <Link href="#">
+                          Read More
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                  </Button>
+                </CardFooter>
+              </div>
             </Card>
           ))}
         </div>
