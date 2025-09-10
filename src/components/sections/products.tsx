@@ -27,7 +27,7 @@ const ProductsSection = () => {
         },
         {
             category: "Non-Return Valves",
-            image: "https://picsum.photos/seed/nrv1/400/400",
+            image: "https://i.postimg.cc/qMnfNxx4/3-nrv-highlighter-image.jpg",
             hint: "check valve",
             description: "Prevent backflow with our high-quality non-return (check) valves, available in swing type and lift type configurations.",
         },
