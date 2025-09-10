@@ -21,7 +21,7 @@ const ProductsSection = () => {
         },
         {
             category: "Globe Valves",
-            image: "https://picsum.photos/seed/gv1/400/400",
+            image: "https://i.postimg.cc/3RwZXkFB/2-GLOBE-VALVE-highlighter.jpg",
             hint: "globe valve",
             description: "Our durable globe valves are designed for precise throttling and flow regulation, ensuring reliable performance.",
         },
