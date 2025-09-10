@@ -8,7 +8,7 @@ const ProfileSection = () => {
   return (
     <section id="profile" className="pt-16 lg:pt-24 pb-48 bg-primary text-white border-b-8 border-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="w-full h-full flex items-center justify-center">
             <svg
                 className="w-[500px] h-[500px]"
@@ -47,9 +47,6 @@ const ProfileSection = () => {
                 />
             </svg>
           </div>
-
-          <Separator orientation="vertical" className="h-full w-0.5 bg-black hidden lg:block" />
-          <Separator orientation="horizontal" className="w-full h-0.5 bg-black lg:hidden" />
 
           <div className="text-left">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-6 uppercase text-white">
