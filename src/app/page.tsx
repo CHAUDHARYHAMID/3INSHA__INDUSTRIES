@@ -11,8 +11,8 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ProductsSection />
-      <ProfileSection />
       <WhyChooseUsSection />
+      <ProfileSection />
       <CallToActionSection />
     </>
   );
