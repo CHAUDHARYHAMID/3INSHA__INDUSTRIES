@@ -7,7 +7,8 @@ const CallToActionSection = () => {
     <section id="call-to-action">
       <div className="bg-primary py-3 overflow-hidden whitespace-nowrap">
         <h3 className="animate-marquee inline-block text-lg font-semibold text-primary-foreground">
-          INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES
+          <span className="mx-4">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
+          <span className="mx-4">INSHA INDUSTRIES ALSO KNOWN AS - LEADING STOCKIST AND SUPPLIER OF PREMIUM BRANDED INDUSTRIAL VALVES</span>
         </h3>
       </div>
       <div className="bg-muted py-12">
