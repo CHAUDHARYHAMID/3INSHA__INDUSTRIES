@@ -2,11 +2,10 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Separator } from '../ui/separator';
 
 const ProfileSection = () => {
   return (
-    <section id="profile" className="relative pt-16 lg:pt-24 pb-48 text-white border-b-8 border-white">
+    <section id="profile" className="relative pt-16 lg:pt-24 pb-24 text-white border-b-8 border-white">
       <Image
         src="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
         alt="Industrial valves background"
