@@ -41,7 +41,7 @@ const ScrollingBanner = () => {
   return (
     <div
       ref={ref}
-      className="relative flex overflow-x-hidden bg-primary py-3 text-lg font-semibold text-primary-foreground group"
+      className="relative flex overflow-x-hidden bg-primary py-4 text-lg font-semibold text-primary-foreground group"
     >
       <div
         className={cn(
