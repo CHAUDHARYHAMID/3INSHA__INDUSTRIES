@@ -15,13 +15,14 @@ const ScrollingBanner = () => {
       { rootMargin: '0px' }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -33,12 +34,21 @@ const ScrollingBanner = () => {
   return (
     <div
       ref={ref}
-      className="flex items-center overflow-hidden bg-primary py-3 text-lg font-semibold text-primary-foreground"
+      className="relative flex overflow-hidden bg-primary py-3 text-lg font-semibold text-primary-foreground"
     >
       <div
         className={cn(
           'flex whitespace-nowrap',
           isIntersecting ? 'animate-marquee' : ''
+        )}
+      >
+        <span className="mx-4">{fullText}</span>
+        <span className="mx-4">{fullText}</span>
+      </div>
+      <div
+        className={cn(
+          'absolute top-0 flex whitespace-nowrap',
+          isIntersecting ? 'animate-marquee2' : ''
         )}
       >
         <span className="mx-4">{fullText}</span>
