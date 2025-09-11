@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Plus } from 'lucide-react';
+import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Image from 'next/image';
@@ -15,6 +15,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { ContactForm } from '../contact-form';
+import ProductDropdown from '../product-dropdown';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,7 +32,7 @@ const Header = () => {
   const navLinks = [
     { href: '#home', label: 'HOME' },
     { href: '#about', label: 'ABOUT US' },
-    { href: '#products', label: 'PRODUCTS', icon: <Plus className="h-4 w-4" /> },
+    { href: '#products', label: 'PRODUCTS', isDropdown: true },
     { href: '#e-catalogue', label: 'E-CATELOGUE' },
     { href: '#contact', label: 'CONTACT US' },
   ];
@@ -88,14 +89,17 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden items-center md:flex justify-end gap-x-4 lg:gap-x-6">
               {navLinks.map((link) => (
+                link.isDropdown ? (
+                    <ProductDropdown key={link.href} />
+                ) : (
                 <Link
                   key={link.href}
                   href={link.href}
                   className="relative flex items-center text-base font-semibold text-foreground/80 transition-colors hover:text-primary"
                 >
                   {link.label}
-                  {link.icon}
                 </Link>
+                )
               ))}
               <Image src="https://i.postimg.cc/VkGXyk5v/Header-image-ISO.png" alt="ISO 9001 Certified" width={90} height={45} className="hidden lg:block" />
               <EnquireNowButton />
@@ -127,6 +131,9 @@ const Header = () => {
                   <nav className="flex flex-1 flex-col justify-between p-4">
                     <div className="space-y-4">
                       {navLinks.map((link) => (
+                         link.isDropdown ? (
+                            <ProductDropdown key={link.href} isMobile={true} />
+                        ) : (
                         <Link
                           key={link.href}
                           href={link.href}
@@ -134,8 +141,8 @@ const Header = () => {
                           className="flex items-center justify-between rounded-md px-4 py-2 text-xl font-medium text-foreground/80 transition-colors hover:bg-accent/10 hover:text-primary"
                         >
                           {link.label}
-                          {link.icon}
                         </Link>
+                        )
                       ))}
                       <div className="flex justify-center">
                         <Image src="https://i.postimg.cc/VkGXyk5v/Header-image-ISO.png" alt="ISO 9001 Certified" width={90} height={45} />
