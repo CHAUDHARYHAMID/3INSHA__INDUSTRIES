@@ -1,3 +1,4 @@
+
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '../ui/button';
@@ -9,6 +10,7 @@ const Footer = () => {
     { href: '/', label: 'Home' },
     { href: '/#about', label: 'About Us' },
     { href: '/#products', label: 'Products' },
+    { href: '/#testimonials', label: 'Testimonials' },
   ];
 
   const socialLinks = [

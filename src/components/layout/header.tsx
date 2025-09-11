@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -36,6 +35,7 @@ const Header = () => {
     { href: '/', label: 'HOME' },
     { href: '/#about', label: 'ABOUT US' },
     { href: '/#products', label: 'PRODUCTS', isDropdown: true },
+    { href: '/#testimonials', label: 'TESTIMONIALS' },
     { href: '#e-catalogue', label: 'E-CATELOGUE' },
     { href: '/#contact', label: 'CONTACT US' },
   ];
