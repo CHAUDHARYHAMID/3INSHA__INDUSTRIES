@@ -1,3 +1,4 @@
+
 "use client";
 
 import { BadgeCheck, Wrench, Timer, Users, Factory, Globe, Award, HeartHandshake } from 'lucide-react';
@@ -63,9 +64,9 @@ const WhyChooseUsSection = () => {
             <Card key={feature.title} className={cn(
               "text-center transition-all duration-700",
               isIntersecting ? feature.animation : 'opacity-0',
-              index === 0 || index === 3 ? 'delay-100' : '',
-              index === 1 || index === 4 ? 'delay-200' : '',
-              index === 2 || index === 5 ? 'delay-300' : ''
+              index % 3 === 0 ? 'delay-100' : '',
+              index % 3 === 1 ? 'delay-200' : '',
+              index % 3 === 2 ? 'delay-300' : ''
             )}>
               <CardHeader className="items-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
