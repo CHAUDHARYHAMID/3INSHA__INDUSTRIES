@@ -11,6 +11,7 @@ import ForgedSteelValvesContent from '@/components/products/forged-steel-valves-
 import NonReturnValvesContent from '@/components/products/non-return-valves-content';
 import ControlValvesContent from '@/components/products/control-valves-content';
 import ButterflyValvesContent from '@/components/products/butterfly-valves-content';
+import StrainersContent from '@/components/products/strainers-content';
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/\s+/g, '-');
@@ -33,6 +34,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   const isNonReturnValves = params.slug === 'non-return-valves';
   const isControlValves = params.slug === 'control-valves';
   const isButterflyValves = params.slug === 'butterfly-valves';
+  const isStrainers = params.slug === 'strainers';
 
   return (
     <div className="bg-background py-12">
@@ -89,6 +91,13 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                     <Image src="https://i.postimg.cc/cC5Xr7dn/last-butterfly-banner-jpeg.jpg" alt="Butterfly Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="butterfly valve diagram" />
                 </div>
                 <ButterflyValvesContent />
+              </>
+            ) : isStrainers ? (
+              <>
+                <div className="mb-8">
+                    <Image src="https://i.postimg.cc/y8B4w4qT/strainer-banner.jpg" alt="Strainer Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="industrial strainer diagram" />
+                </div>
+                <StrainersContent />
               </>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
