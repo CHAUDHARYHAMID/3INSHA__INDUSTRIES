@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -63,7 +64,7 @@ const Header = () => {
     >
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground">
-        <div className="mx-auto flex h-auto min-h-[1rem] items-center justify-between px-4 py-1 sm:px-6 lg:px-8">
+        <div className="container mx-auto flex h-auto min-h-[1rem] items-center justify-between px-4 py-1 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-base md:ml-12">
             <div className="flex items-center">
               <Phone className="mr-2 h-4 w-4" />
@@ -81,14 +82,13 @@ const Header = () => {
 
       {/* Main Header */}
       <div className="bg-background">
-        <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8 ml-10">
-          <div className="flex items-center gap-x-12">
-            <Link href="/" className="flex-shrink-0 p-2">
-               <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={370} height={82} />
+        <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
+            <Link href="/" className="flex-shrink-0">
+               <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={280} height={62} className="h-auto w-48 sm:w-60 md:w-72" />
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden items-center md:flex justify-end gap-x-4 lg:gap-x-6">
+            <nav className="hidden items-center lg:flex justify-end gap-x-4 lg:gap-x-6">
               {navLinks.map((link) => (
                 link.isDropdown ? (
                     <ProductDropdown key={link.href} />
@@ -102,13 +102,12 @@ const Header = () => {
                 </Link>
                 )
               ))}
-              <Image src="https://i.postimg.cc/VkGXyk5v/Header-image-ISO.png" alt="ISO 9001 Certified" width={90} height={45} className="hidden lg:block" />
+              <Image src="https://i.postimg.cc/VkGXyk5v/Header-image-ISO.png" alt="ISO 9001 Certified" width={90} height={45} className="hidden xl:block" />
               <EnquireNowButton />
             </nav>
-          </div>
 
-          {/* Mobile Navigation */}
-          <div className="md:hidden">
+          {/* Mobile/Tablet Navigation */}
+          <div className="lg:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
