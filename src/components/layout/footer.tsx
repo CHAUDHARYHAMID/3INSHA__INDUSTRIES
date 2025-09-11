@@ -10,7 +10,6 @@ const Footer = () => {
     { href: '/', label: 'Home' },
     { href: '/#about', label: 'About Us' },
     { href: '/#products', label: 'Products' },
-    { href: '/#testimonials', label: 'Testimonials' },
   ];
 
   const socialLinks = [
@@ -54,9 +53,12 @@ const Footer = () => {
                   <Phone className="mr-3 h-5 w-5 text-accent" />
                   <span className="text-white">+91 9820409988 | +91 7021181068</span>
               </li>
-              <li className="flex items-center">
-                  <Mail className="mr-3 h-5 w-5 text-accent" />
-                  <span className="text-white">info@inshaindustries.com</span>
+              <li className="flex items-start">
+                  <Mail className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-accent" />
+                  <div className='flex flex-col'>
+                    <span className="text-white">info@inshaindustries.com</span>
+                    <span className="text-white">insha.industries@outlook.com</span>
+                  </div>
               </li>
               </ul>
             </div>
