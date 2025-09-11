@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 const Footer = () => {
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About Us' },
-    { href: '#products', label: 'Products' },
+    { href: '/', label: 'Home' },
+    { href: '/#about', label: 'About Us' },
+    { href: '/#products', label: 'Products' },
   ];
 
   const socialLinks = [
@@ -100,7 +100,7 @@ const Footer = () => {
                 </li>
               ))}
                <li>
-                  <Link href="#contact-section" className="text-white transition-colors hover:text-accent">
+                  <Link href="/#contact" className="text-white transition-colors hover:text-accent">
                     Contact Us
                   </Link>
                 </li>

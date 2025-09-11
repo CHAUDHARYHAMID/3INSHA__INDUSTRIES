@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -30,11 +31,11 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'HOME' },
-    { href: '#about', label: 'ABOUT US' },
-    { href: '#products', label: 'PRODUCTS', isDropdown: true },
+    { href: '/', label: 'HOME' },
+    { href: '/#about', label: 'ABOUT US' },
+    { href: '/#products', label: 'PRODUCTS', isDropdown: true },
     { href: '#e-catalogue', label: 'E-CATELOGUE' },
-    { href: '#contact', label: 'CONTACT US' },
+    { href: '/#contact', label: 'CONTACT US' },
   ];
 
   const EnquireNowButton = () => (
@@ -82,7 +83,7 @@ const Header = () => {
       <div className="bg-background">
         <div className="mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8 ml-10">
           <div className="flex items-center gap-x-12">
-            <Link href="#home" className="flex-shrink-0 p-2">
+            <Link href="/" className="flex-shrink-0 p-2">
                <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={370} height={82} />
             </Link>
 
@@ -118,7 +119,7 @@ const Header = () => {
               <SheetContent side="right" className="w-[300px] bg-background p-0">
                 <div className="flex h-full flex-col">
                   <div className="flex items-center justify-between border-b p-4">
-                     <Link href="#home" onClick={() => setMobileMenuOpen(false)}>
+                     <Link href="/" onClick={() => setMobileMenuOpen(false)}>
                         <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={230} height={62} />
                     </Link>
                     <SheetTrigger asChild>

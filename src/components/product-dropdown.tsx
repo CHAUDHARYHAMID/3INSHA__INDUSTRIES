@@ -53,7 +53,7 @@ const ProductDropdown = ({ isMobile = false }: { isMobile?: boolean }) => {
       onMouseLeave={() => setIsOpen(false)}
     >
       <Link
-        href="#products"
+        href="/#products"
         className="relative flex items-center text-base font-semibold text-foreground/80 transition-colors hover:text-primary"
       >
         PRODUCTS
