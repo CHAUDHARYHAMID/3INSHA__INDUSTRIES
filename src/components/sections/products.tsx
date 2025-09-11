@@ -23,27 +23,39 @@ function slugify(text: string) {
 const ProductsSection = () => {
     const { ref, isIntersecting } = useIntersectionObserver({
         threshold: 0.1,
+        triggerOnce: false,
     });
 
   return (
-    <section id="products" className="py-8 bg-background section-padding">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="products" className="py-8 bg-background section-padding overflow-hidden">
+      <div ref={ref} className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl font-extrabold tracking-tight text-primary sm:text-4xl">
+          <h2 className={cn("text-3xl font-extrabold tracking-tight text-primary sm:text-4xl transition-all duration-500", isIntersecting ? 'animate-fade-in-up' : 'opacity-0 translate-y-10')}>
             Our Products
           </h2>
-          <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
+          <p className={cn("mx-auto max-w-3xl text-lg text-muted-foreground transition-all duration-500 delay-200", isIntersecting ? 'animate-fade-in-up' : 'opacity-0 translate-y-10')}>
             A comprehensive selection of high-quality industrial valves, meticulously designed and manufactured to meet diverse industrial requirements.
           </p>
         </div>
 
-        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((offering, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {products.map((offering, index) => {
+            const animationClass = 
+                index % 3 === 0 ? 'animate-slide-in-from-left' :
+                index % 3 === 1 ? 'animate-slide-in-from-bottom' :
+                'animate-slide-in-from-right';
+            
+            const animationDelay = 
+              index % 3 === 0 ? 'delay-100' :
+              index % 3 === 1 ? 'delay-200' :
+              'delay-300';
+            
+            return (
             <Card key={index} className={cn(
-                "group overflow-hidden rounded-lg shadow-lg text-center flex flex-col border shadow-sm transition-all duration-500",
-                isIntersecting ? 'animate-fade-in-up' : 'opacity-0 translate-y-10'
-              )}
-              style={{ animationDelay: `${index * 150}ms` }}>
+                "group overflow-hidden rounded-lg shadow-lg text-center flex flex-col border shadow-sm transition-all duration-700",
+                isIntersecting ? animationClass : 'opacity-0',
+                animationDelay
+              )}>
               <div className="relative h-60 w-full overflow-hidden">
                 <Image
                     src={offering.image}
@@ -70,7 +82,7 @@ const ProductsSection = () => {
                 </CardFooter>
               </div>
             </Card>
-          ))}
+          )})}
         </div>
       </div>
     </section>
