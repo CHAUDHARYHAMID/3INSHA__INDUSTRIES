@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
             align: 'start',
             loop: true,
           }}
-          className="w-full max-w-6xl mx-auto"
+          className="w-full max-w-5xl mx-auto"
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
