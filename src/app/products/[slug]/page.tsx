@@ -8,6 +8,7 @@ import { ContactForm } from '@/components/contact-form';
 import GateValvesContent from '@/components/products/gate-valves-content';
 import GlobeValvesContent from '@/components/products/globe-valves-content';
 import ForgedSteelValvesContent from '@/components/products/forged-steel-valves-content';
+import NonReturnValvesContent from '@/components/products/non-return-valves-content';
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/\s+/g, '-');
@@ -27,6 +28,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   const isGateValves = params.slug === 'gate-valves';
   const isGlobeValves = params.slug === 'globe-valves';
   const isForgedSteelValves = params.slug === 'forged-steel-valves';
+  const isNonReturnValves = params.slug === 'non-return-valves';
 
   return (
     <div className="bg-background py-12">
@@ -63,6 +65,13 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                   </div>
                   <ForgedSteelValvesContent />
                 </>
+            ) : isNonReturnValves ? (
+              <>
+                <div className="mb-8">
+                    <Image src="https://i.postimg.cc/zvnpqYd4/3-nrv-banner.png" alt="Non-Return Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="check valve diagram" />
+                </div>
+                <NonReturnValvesContent />
+              </>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                 <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
