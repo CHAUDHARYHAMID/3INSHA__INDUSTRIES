@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
                   <Card className="flex flex-col h-full shadow-lg">
                     <CardContent className="flex flex-col flex-grow items-center justify-center p-6 text-center">
