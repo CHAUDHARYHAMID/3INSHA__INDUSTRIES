@@ -3,51 +3,51 @@ export const testimonials = [
     {
       name: "Rajesh Kumar",
       location: "Mumbai",
-      quote: "Insha Industries has been our go-to supplier for industrial valves for over five years. Their commitment to quality and timely delivery is commendable. We are extremely satisfied with their products and services.",
+      quote: "Insha Industries has been our go-to supplier for over five years. Their commitment to quality and timely delivery is commendable.",
     },
     {
       name: "Priya Sharma",
       location: "Delhi",
-      quote: "We have been using Insha Industries' valves in our manufacturing unit, and they have consistently performed beyond our expectations. The durability and reliability of their products are unmatched.",
+      quote: "We use Insha Industries' valves in our manufacturing unit, and they consistently perform beyond our expectations.",
     },
     {
       name: "Anil Mehta",
       location: "Ahmedabad",
-      quote: "The team at Insha Industries is highly professional and responsive. They provided us with customized valve solutions that perfectly fit our requirements. Highly recommended!",
+      quote: "The team at Insha Industries is highly professional and responsive, providing customized solutions that fit our needs.",
     },
     {
       name: "Neha Singh",
       location: "Bangalore",
-      quote: "Insha Industries' valves have proven to be extremely rugged and reliable. Their products have significantly reduced our maintenance costs and downtime.",
+      quote: "Insha Industries' valves are extremely rugged and reliable, significantly reducing our maintenance costs and downtime.",
     },
     {
       name: "Ravi Patel",
       location: "Surat",
-      quote: "We appreciate the high-quality standards maintained by Insha Industries. Their valves have consistently delivered excellent performance, and their customer service is top-notch.",
+      quote: "We appreciate the high-quality standards of Insha Industries. Their valves deliver excellent performance and service.",
     },
     {
       name: "Sunita Reddy",
       location: "Hyderabad",
-      quote: "Insha Industries has always been our preferred valve supplier. Their extensive product range and commitment to quality make them stand out in the industry.",
+      quote: "Insha Industries is our preferred valve supplier. Their product range and commitment to quality make them stand out.",
     },
     {
       name: "Vishal Desai",
       location: "Pune",
-      quote: "The valves from Insha Industries have been a game-changer for our operations. Their leak-proof design and low maintenance requirements have improved our efficiency significantly.",
+      quote: "The valves from Insha Industries have been a game-changer, with leak-proof design and low maintenance requirements.",
     },
     {
       name: "Meera Kapoor",
       location: "Jaipur",
-      quote: "We have been extremely impressed with the performance and durability of Insha Industries' valves. Their products have consistently met our stringent quality standards.",
+      quote: "We are extremely impressed with the performance and durability of Insha Industries' valves. They meet our stringent quality standards.",
     },
     {
       name: "Suresh Nair",
       location: "Kochi",
-      quote: "Insha Industries' customer-centric approach and dedication to excellence have made them a reliable partner for our business. Their valves are of superior quality and offer excellent value for money.",
+      quote: "Insha Industries' customer-centric approach and dedication to excellence have made them a reliable partner for our business.",
     },
     {
       name: "Arjun Iyer",
       location: "Chennai",
-      quote: "The quality and performance of Insha Industries' valves are truly exceptional. Their products have helped us achieve better operational efficiency and reliability in our processes.",
+      quote: "The quality and performance of Insha Industries' valves are truly exceptional, helping us achieve better operational efficiency.",
     },
 ];
