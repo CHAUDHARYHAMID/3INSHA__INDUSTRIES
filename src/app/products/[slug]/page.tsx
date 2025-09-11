@@ -7,6 +7,7 @@ import { ArrowLeft } from 'lucide-react';
 import { ContactForm } from '@/components/contact-form';
 import GateValvesContent from '@/components/products/gate-valves-content';
 import GlobeValvesContent from '@/components/products/globe-valves-content';
+import ForgedSteelValvesContent from '@/components/products/forged-steel-valves-content';
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/\s+/g, '-');
@@ -25,6 +26,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
   const isGateValves = params.slug === 'gate-valves';
   const isGlobeValves = params.slug === 'globe-valves';
+  const isForgedSteelValves = params.slug === 'forged-steel-valves';
 
   return (
     <div className="bg-background py-12">
@@ -54,6 +56,13 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                 </div>
                 <GlobeValvesContent />
               </>
+            ) : isForgedSteelValves ? (
+                <>
+                  <div className="mb-8">
+                      <Image src="https://i.postimg.cc/vZ78L49j/4th-forged-steel-banner.jpg" alt="Forged Steel Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="forged steel valve" />
+                  </div>
+                  <ForgedSteelValvesContent />
+                </>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                 <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
