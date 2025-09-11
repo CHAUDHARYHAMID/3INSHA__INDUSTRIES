@@ -62,6 +62,9 @@
     @apply bg-background text-foreground;
     scroll-behavior: smooth;
   }
+  .section-padding {
+    scroll-margin-top: 140px; /* Adjust this value based on header height */
+  }
 }
 
 .morph-path {

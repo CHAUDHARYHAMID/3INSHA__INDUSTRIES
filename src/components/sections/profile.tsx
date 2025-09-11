@@ -6,7 +6,7 @@ import images from '@/lib/placeholder-images.json';
 
 const ProfileSection = () => {
   return (
-    <section id="profile" className="relative py-12 text-white border-b-8 border-white">
+    <section id="profile" className="relative py-12 text-white border-b-8 border-white section-padding">
       <Image
         src={images.profileBanner.src}
         alt={images.profileBanner.alt}

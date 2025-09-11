@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="contact" className="bg-primary text-white">
+    <footer id="contact" className="bg-primary text-white section-padding">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Map */}
