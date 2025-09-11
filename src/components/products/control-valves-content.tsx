@@ -7,6 +7,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import Image from 'next/image';
+import images from '@/lib/placeholder-images.json';
 
 const SpecTable = ({
   data,
@@ -83,8 +84,8 @@ const ControlValvesContent = () => {
       <div className="grid grid-cols-2 items-center gap-8">
         <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/c4rsxbtL/control-valve-highlighter.jpg"
-                alt="Control valve"
+                src={images.controlValveHighlighter.src}
+                alt={images.controlValveHighlighter.alt}
                 fill
                 className="object-contain"
                 data-ai-hint="control valve"
@@ -92,8 +93,8 @@ const ControlValvesContent = () => {
         </div>
         <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/Pqj8GzYc/control-valve-2.jpg"
-                alt="Control valve application"
+                src={images.controlValve2.src}
+                alt={images.controlValve2.alt}
                 fill
                 className="object-contain"
                 data-ai-hint="industrial valve"

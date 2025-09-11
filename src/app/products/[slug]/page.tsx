@@ -12,6 +12,7 @@ import NonReturnValvesContent from '@/components/products/non-return-valves-cont
 import ControlValvesContent from '@/components/products/control-valves-content';
 import ButterflyValvesContent from '@/components/products/butterfly-valves-content';
 import StrainersContent from '@/components/products/strainers-content';
+import images from '@/lib/placeholder-images.json';
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/\s+/g, '-');
@@ -53,49 +54,49 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             {isGateValves ? (
               <>
                 <div className="mb-8">
-                    <Image src="https://i.postimg.cc/kGZYgy9t/1-gate-valve-banner-jpeg.jpg" alt="Gate Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
+                    <Image src={images.gateValveBanner.src} alt={images.gateValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
                 </div>
                 <GateValvesContent />
               </>
             ) : isGlobeValves ? (
               <>
                 <div className="mb-8">
-                    <Image src="https://i.postimg.cc/k42p3ZPd/2-globe-valve-banner.jpg" alt="Globe Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
+                    <Image src={images.globeValveBanner.src} alt={images.globeValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
                 </div>
                 <GlobeValvesContent />
               </>
             ) : isForgedSteelValves ? (
                 <>
                   <div className="mb-8">
-                      <Image src="https://i.postimg.cc/vZ78L49j/4th-forged-steel-banner.jpg" alt="Forged Steel Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="forged steel valve" />
+                      <Image src={images.forgedSteelBanner.src} alt={images.forgedSteelBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="forged steel valve" />
                   </div>
                   <ForgedSteelValvesContent />
                 </>
             ) : isNonReturnValves ? (
               <>
                 <div className="mb-8">
-                    <Image src="https://i.postimg.cc/zvnpqYd4/3-nrv-banner.png" alt="Non-Return Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="check valve diagram" />
+                    <Image src={images.nrvBanner.src} alt={images.nrvBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="check valve diagram" />
                 </div>
                 <NonReturnValvesContent />
               </>
             ) : isControlValves ? (
               <>
                 <div className="mb-8">
-                    <Image src="https://i.postimg.cc/SRp5Q6V7/control-valve-banner.jpg" alt="Control Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="control valve diagram" />
+                    <Image src={images.controlValveBanner.src} alt={images.controlValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="control valve diagram" />
                 </div>
                 <ControlValvesContent />
               </>
             ) : isButterflyValves ? (
               <>
                 <div className="mb-8">
-                    <Image src="https://i.postimg.cc/cC5Xr7dn/last-butterfly-banner-jpeg.jpg" alt="Butterfly Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="butterfly valve diagram" />
+                    <Image src={images.butterflyBanner.src} alt={images.butterflyBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="butterfly valve diagram" />
                 </div>
                 <ButterflyValvesContent />
               </>
             ) : isStrainers ? (
               <>
                 <div className="mb-8">
-                    <Image src="https://i.postimg.cc/y8B4w4qT/strainer-banner.jpg" alt="Strainer Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="industrial strainer diagram" />
+                    <Image src={images.strainerBanner.src} alt={images.strainerBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="industrial strainer diagram" />
                 </div>
                 <StrainersContent />
               </>

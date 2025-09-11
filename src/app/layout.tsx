@@ -6,6 +6,13 @@ import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 import WhatsAppFAB from '@/components/whatsapp-fab';
 import CallFAB from '@/components/call-fab';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-poppins',
+});
 
 export const metadata: Metadata = {
   title: 'Insha Industries',
@@ -19,17 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased',
+          poppins.variable
         )}
       >
         <Header />

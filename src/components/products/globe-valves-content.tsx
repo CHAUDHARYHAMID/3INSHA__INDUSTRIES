@@ -7,6 +7,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import Image from 'next/image';
+import images from '@/lib/placeholder-images.json';
 
 const SpecTable = ({
   data,
@@ -83,8 +84,8 @@ const GlobeValvesContent = () => {
       <div className="grid grid-cols-2 items-center gap-8">
         <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/3RwZXkFB/2-GLOBE-VALVE-highlighter.jpg"
-                alt="Globe valve"
+                src={images.globeValveHighlighter.src}
+                alt={images.globeValveHighlighter.alt}
                 fill
                 className="object-contain"
                 data-ai-hint="globe valve"
@@ -92,8 +93,8 @@ const GlobeValvesContent = () => {
         </div>
         <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/k42p3ZPd/2-globe-valve-banner.jpg"
-                alt="Globe valve application"
+                src={images.globeValveBanner.src}
+                alt={images.globeValveBanner.alt}
                 fill
                 className="object-contain"
                 data-ai-hint="industrial valve"

@@ -2,6 +2,7 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'luc
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import Image from 'next/image';
+import images from '@/lib/placeholder-images.json';
 
 const Footer = () => {
   const navLinks = [
@@ -60,8 +61,8 @@ const Footer = () => {
              <div className='flex items-center gap-x-2'>
                 <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
-                        src="https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg" 
-                        alt="Certifications" 
+                        src={images.footerImage1.src} 
+                        alt={images.footerImage1.alt} 
                         width={63}
                         height={63}
                         className='object-contain h-full w-auto'
@@ -69,8 +70,8 @@ const Footer = () => {
                 </div>
                 <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
-                        src="https://i.postimg.cc/25tGr4WZ/2-footer-image.jpg" 
-                        alt="Certifications" 
+                        src={images.footerImage2.src} 
+                        alt={images.footerImage2.alt}
                         width={140}
                         height={63}
                         className='object-contain h-full w-auto'
@@ -78,8 +79,8 @@ const Footer = () => {
                 </div>
                 <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
-                        src="https://i.postimg.cc/4y6jY8vM/3rd-footer-image.jpg" 
-                        alt="Certifications" 
+                        src={images.footerImage3.src} 
+                        alt={images.footerImage3.alt} 
                         width={63}
                         height={63}
                         className='object-contain h-full w-auto'

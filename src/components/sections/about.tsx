@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Target, Eye } from 'lucide-react';
+import images from '@/lib/placeholder-images.json';
 
 const AboutSection = () => {
   return (
@@ -16,8 +17,8 @@ const AboutSection = () => {
           </div>
           <div className="relative h-80 w-full lg:h-full min-h-[300px] rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="https://i.postimg.cc/gcwbVXqk/1st-banner.jpg"
-              alt="About Insha Industries"
+              src={images.aboutBanner.src}
+              alt={images.aboutBanner.alt}
               fill
               className="object-cover"
               data-ai-hint="industrial factory"

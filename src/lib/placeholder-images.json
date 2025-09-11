@@ -1,0 +1,122 @@
+{
+    "logo": {
+        "src": "https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png",
+        "alt": "Insha Industries Logo"
+    },
+    "isoImage": {
+        "src": "https://i.postimg.cc/VkGXyk5v/Header-image-ISO.png",
+        "alt": "ISO 9001 Certified"
+    },
+    "gateValveBanner": {
+        "src": "https://i.postimg.cc/kGZYgy9t/1-gate-valve-banner-jpeg.jpg",
+        "alt": "Gate Valve Types"
+    },
+    "gateValveHighlight": {
+        "src": "https://i.postimg.cc/26B3bkN9/1-GATE-VALVE-highlight.jpg",
+        "alt": "Gate valve cross-section"
+    },
+    "gateValveImage2": {
+        "src": "https://i.postimg.cc/mkxVf8pX/second-gate-valve-image.png",
+        "alt": "Gate valve parts"
+    },
+    "globeValveBanner": {
+        "src": "https://i.postimg.cc/k42p3ZPd/2-globe-valve-banner.jpg",
+        "alt": "Globe Valve Types"
+    },
+    "globeValveHighlighter": {
+        "src": "https://i.postimg.cc/3RwZXkFB/2-GLOBE-VALVE-highlighter.jpg",
+        "alt": "Globe valve"
+    },
+    "nrvBanner": {
+        "src": "https://i.postimg.cc/zvnpqYd4/3-nrv-banner.png",
+        "alt": "Non-Return Valve Types"
+    },
+    "nrvHighlighter": {
+        "src": "https://i.postimg.cc/qMnfNxx4/3-nrv-highlighter-image.jpg",
+        "alt": "Swing type check valve"
+    },
+    "nrv2": {
+        "src": "https://i.postimg.cc/d16PFR9g/non-return-valve-2.jpg",
+        "alt": "Lift type check valve"
+    },
+    "forgedSteelBanner": {
+        "src": "https://i.postimg.cc/vZ78L49j/4th-forged-steel-banner.jpg",
+        "alt": "Forged Steel Valve Types"
+    },
+    "forgedSteelHighlighter": {
+        "src": "https://i.postimg.cc/1thBF5xv/forged-steel-highlighter-image.jpg",
+        "alt": "Forged steel valve"
+    },
+    "ballValveBanner": {
+        "src": "https://i.postimg.cc/1tDDqcpq/5-ball-banner-jpeg.jpg",
+        "alt": "Ball Valve Types"
+    },
+    "ballValveHighlighter": {
+        "src": "https://i.postimg.cc/g2SPWT2k/5th-ball-highlighter.png",
+        "alt": "Ball valve"
+    },
+    "butterflyBanner": {
+        "src": "https://i.postimg.cc/cC5Xr7dn/last-butterfly-banner-jpeg.jpg",
+        "alt": "Butterfly Valve Types"
+    },
+    "butterflyValveHighlighter": {
+        "src": "https://i.postimg.cc/c1TJPgbN/6th-butterfly-highlighter.jpg",
+        "alt": "Butterfly valve"
+    },
+    "butterflyValve2": {
+        "src": "https://i.postimg.cc/8P4j3vQv/butterfly-valve-2.jpg",
+        "alt": "Butterfly valve application"
+    },
+    "safetyValveBg": {
+        "src": "https://i.postimg.cc/XqgCpn3B/safety-valve-bg.jpg",
+        "alt": "Safety valve"
+    },
+    "safetyValveHighlighter": {
+        "src": "https://i.postimg.cc/VLDfvJyW/safety-valve-highlighter.png",
+        "alt": "Safety valve"
+    },
+    "aboutBanner": {
+        "src": "https://i.postimg.cc/gcwbVXqk/1st-banner.jpg",
+        "alt": "About Insha Industries"
+    },
+    "profileBanner": {
+        "src": "https://i.postimg.cc/v81Cg457/2nd-banner.jpg",
+        "alt": "Industrial valves background"
+    },
+    "footerImage1": {
+        "src": "https://i.postimg.cc/59ZhnJQJ/1st-footer-image.jpg",
+        "alt": "Certifications"
+    },
+    "footerImage2": {
+        "src": "https://i.postimg.cc/25tGr4WZ/2-footer-image.jpg",
+        "alt": "Certifications"
+    },
+    "footerImage3": {
+        "src": "https://i.postimg.cc/4y6jY8vM/3rd-footer-image.jpg",
+        "alt": "Certifications"
+    },
+    "controlValveBanner": {
+        "src": "https://i.postimg.cc/SRp5Q6V7/control-valve-banner.jpg",
+        "alt": "Control Valve Types"
+    },
+    "controlValveHighlighter": {
+        "src": "https://i.postimg.cc/c4rsxbtL/control-valve-highlighter.jpg",
+        "alt": "Control valve"
+    },
+    "controlValve2": {
+        "src": "https://i.postimg.cc/Pqj8GzYc/control-valve-2.jpg",
+        "alt": "Control valve application"
+    },
+    "strainerBanner": {
+        "src": "https://i.postimg.cc/y8B4w4qT/strainer-banner.jpg",
+        "alt": "Strainer Types"
+    },
+    "strainerHighlighter": {
+        "src": "https://i.postimg.cc/tCyh8Fsk/STRAINER-highlight.png",
+        "alt": "Y-type strainer"
+    },
+    "basketStrainer": {
+        "src": "https://i.postimg.cc/d1V4gH49/basket-strainer.jpg",
+        "alt": "Basket-type strainer"
+    }
+}

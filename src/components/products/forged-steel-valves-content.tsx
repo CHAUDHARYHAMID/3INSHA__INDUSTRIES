@@ -7,6 +7,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import Image from 'next/image';
+import images from '@/lib/placeholder-images.json';
 
 const SpecTable = ({
   data,
@@ -64,8 +65,8 @@ const ForgedSteelValvesContent = () => {
       <div className="grid grid-cols-2 items-center gap-8">
         <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/1thBF5xv/forged-steel-highlighter-image.jpg"
-                alt="Forged steel valve"
+                src={images.forgedSteelHighlighter.src}
+                alt={images.forgedSteelHighlighter.alt}
                 fill
                 className="object-contain"
                 data-ai-hint="forged steel"
@@ -73,8 +74,8 @@ const ForgedSteelValvesContent = () => {
         </div>
         <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/vZ78L49j/4th-forged-steel-banner.jpg"
-                alt="Forged steel valve application"
+                src={images.forgedSteelBanner.src}
+                alt={images.forgedSteelBanner.alt}
                 fill
                 className="object-contain"
                 data-ai-hint="industrial valve"

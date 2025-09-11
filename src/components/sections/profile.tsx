@@ -2,13 +2,14 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import images from '@/lib/placeholder-images.json';
 
 const ProfileSection = () => {
   return (
     <section id="profile" className="relative py-12 text-white border-b-8 border-white">
       <Image
-        src="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
-        alt="Industrial valves background"
+        src={images.profileBanner.src}
+        alt={images.profileBanner.alt}
         layout="fill"
         objectFit="cover"
         className="z-0"
@@ -19,8 +20,8 @@ const ProfileSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="w-full h-full flex items-center justify-center">
              <Image
-                src="https://i.postimg.cc/v81Cg457/2nd-banner.jpg"
-                alt="Profile Image"
+                src={images.profileBanner.src}
+                alt={images.profileBanner.alt}
                 width={650}
                 height={650}
                 className="rounded-lg shadow-2xl"

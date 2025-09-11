@@ -18,6 +18,7 @@ import {
 } from '@/components/ui/dialog';
 import { ContactForm } from '../contact-form';
 import ProductDropdown from '../product-dropdown';
+import images from '@/lib/placeholder-images.json';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -65,7 +66,7 @@ const Header = () => {
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground">
         <div className="container mx-auto flex h-auto min-h-[1rem] items-center justify-between px-4 py-1 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-base md:ml-12">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-base">
             <div className="flex items-center">
               <Phone className="mr-2 h-4 w-4" />
               <span>+91 9820409988</span>
@@ -84,7 +85,7 @@ const Header = () => {
       <div className="bg-background">
         <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
             <Link href="/" className="flex-shrink-0">
-               <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={280} height={62} className="h-auto w-48 sm:w-60 md:w-72" />
+               <Image src={images.logo.src} alt={images.logo.alt} width={280} height={62} className="h-auto w-48 sm:w-60 md:w-72" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -102,7 +103,7 @@ const Header = () => {
                 </Link>
                 )
               ))}
-              <Image src="https://i.postimg.cc/VkGXyk5v/Header-image-ISO.png" alt="ISO 9001 Certified" width={90} height={45} className="hidden xl:block" />
+              <Image src={images.isoImage.src} alt={images.isoImage.alt} width={90} height={45} className="hidden xl:block" />
               <EnquireNowButton />
             </nav>
 
@@ -119,7 +120,7 @@ const Header = () => {
                 <div className="flex h-full flex-col">
                   <div className="flex items-center justify-between border-b p-4">
                      <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                        <Image src="https://i.postimg.cc/WzHVzDwK/Whats-App-Image-2025-09-05-at-18-39-09-fd785157-Photoroom.png" alt="Insha Industries Logo" width={230} height={62} />
+                        <Image src={images.logo.src} alt={images.logo.alt} width={230} height={62} />
                     </Link>
                     <SheetTrigger asChild>
                       <Button variant="ghost" size="icon">
@@ -145,7 +146,7 @@ const Header = () => {
                         )
                       ))}
                       <div className="flex justify-center">
-                        <Image src="https://i.postimg.cc/VkGXyk5v/Header-image-ISO.png" alt="ISO 9001 Certified" width={90} height={45} />
+                        <Image src={images.isoImage.src} alt={images.isoImage.alt} width={90} height={45} />
                       </div>
                     </div>
                      <div className="flex flex-col items-center gap-4 py-4">

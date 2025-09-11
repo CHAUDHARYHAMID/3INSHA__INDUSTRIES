@@ -7,6 +7,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import Image from 'next/image';
+import images from '@/lib/placeholder-images.json';
 
 const SpecTable = ({
   data,
@@ -67,8 +68,8 @@ const StrainersContent = () => {
       <div className="grid grid-cols-2 items-center gap-8">
         <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/tCyh8Fsk/STRAINER-highlight.png"
-                alt="Y-type strainer"
+                src={images.strainerHighlighter.src}
+                alt={images.strainerHighlighter.alt}
                 fill
                 className="object-contain"
                 data-ai-hint="industrial strainer"
@@ -76,8 +77,8 @@ const StrainersContent = () => {
         </div>
         <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/d1V4gH49/basket-strainer.jpg"
-                alt="Basket-type strainer"
+                src={images.basketStrainer.src}
+                alt={images.basketStrainer.alt}
                 fill
                 className="object-contain"
                 data-ai-hint="basket strainer"
