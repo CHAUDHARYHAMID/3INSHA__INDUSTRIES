@@ -36,46 +36,45 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </Button>
         </div>
 
-        {isGateValves ? (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-            <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+          <div className="lg:col-span-2">
+            {isGateValves ? (
+              <>
                 <div className="mb-8">
                     <Image src="/gate-valve-banner.png" alt="Gate Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
                 </div>
                 <GateValvesContent />
-            </div>
-            <div className="bg-card p-6 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-bold text-primary mb-4">Enquire Now</h2>
-                <ContactForm />
-            </div>
+              </>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src={product.image}
+                    alt={product.category}
+                    fill
+                    className="object-contain"
+                    data-ai-hint={product.hint}
+                  />
+                </div>
+                <div className="space-y-6">
+                  <h1 className="text-4xl font-extrabold tracking-tight text-primary sm:text-5xl">
+                    {product.category}
+                  </h1>
+                  <p className="text-lg text-muted-foreground">
+                    {product.description}
+                  </p>
+                  <p className="text-lg text-muted-foreground">
+                      For detailed specifications, availability, and pricing, please contact us. Our team is ready to assist you with your specific requirements and provide you with the best possible solutions.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src={product.image}
-                alt={product.category}
-                fill
-                className="object-contain"
-                data-ai-hint={product.hint}
-              />
-            </div>
-            <div className="space-y-6">
-              <h1 className="text-4xl font-extrabold tracking-tight text-primary sm:text-5xl">
-                {product.category}
-              </h1>
-              <p className="text-lg text-muted-foreground">
-                {product.description}
-              </p>
-              <p className="text-lg text-muted-foreground">
-                  For detailed specifications, availability, and pricing, please contact us. Our team is ready to assist you with your specific requirements and provide you with the best possible solutions.
-              </p>
-              <Button asChild size="lg">
-                <Link href="/#contact">Enquire Now</Link>
-              </Button>
-            </div>
+          <div className="bg-card p-6 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold text-primary mb-4">Enquire Now</h2>
+              <ContactForm />
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
