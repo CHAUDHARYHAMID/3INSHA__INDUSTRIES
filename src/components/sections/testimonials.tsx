@@ -6,13 +6,18 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel';
 import { testimonials } from '@/lib/testimonials';
 import { Quote } from 'lucide-react';
+import Autoplay from "embla-carousel-autoplay"
+import React from 'react';
 
 const TestimonialsSection = () => {
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: false })
+  )
+
   return (
     <section id="testimonials" className="py-8 bg-card section-padding">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,6 +32,7 @@ const TestimonialsSection = () => {
         </div>
 
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: 'start',
             loop: true,
@@ -57,8 +63,6 @@ const TestimonialsSection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden sm:flex" />
-          <CarouselNext className="hidden sm:flex" />
         </Carousel>
       </div>
     </section>
