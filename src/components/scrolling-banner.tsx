@@ -10,7 +10,7 @@ const ScrollingBanner = () => {
 
   return (
     <div
-      className="relative flex overflow-x-hidden bg-primary py-4 text-lg font-semibold text-primary-foreground group"
+      className="relative flex overflow-x-hidden bg-primary py-4 text-xl font-semibold text-primary-foreground group"
     >
       <div
         className='flex animate-marquee-infinite whitespace-nowrap'
