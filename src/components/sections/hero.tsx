@@ -81,16 +81,16 @@ const HeroSection = () => {
 
   const getProductHref = (slideTitle: string) => {
     const slug = slugify(slideTitle);
+
+    if (slug === 'safety-valves') {
+        return '/products/special-service-valves';
+    }
+
     const productExists = products.some(p => slugify(p.category) === slug);
     if (productExists) {
       return `/products/${slug}`;
     }
-    if (slug === 'safety-valves') {
-        const specialServiceSlug = slugify('Special Service Valves');
-        if (products.some(p => slugify(p.category) === specialServiceSlug)) {
-            return `/products/${specialServiceSlug}`;
-        }
-    }
+    
     return '#products';
   }
 
