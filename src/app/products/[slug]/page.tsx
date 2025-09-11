@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { ContactForm } from '@/components/contact-form';
 import GateValvesContent from '@/components/products/gate-valves-content';
+import GlobeValvesContent from '@/components/products/globe-valves-content';
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/\s+/g, '-');
@@ -23,6 +24,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   }
 
   const isGateValves = params.slug === 'gate-valves';
+  const isGlobeValves = params.slug === 'globe-valves';
 
   return (
     <div className="bg-background py-12">
@@ -41,9 +43,16 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             {isGateValves ? (
               <>
                 <div className="mb-8">
-                    <Image src="/gate-valve-banner.png" alt="Gate Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
+                    <Image src="https://i.postimg.cc/kGZYgy9t/1-gate-valve-banner-jpeg.jpg" alt="Gate Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
                 </div>
                 <GateValvesContent />
+              </>
+            ) : isGlobeValves ? (
+              <>
+                <div className="mb-8">
+                    <Image src="https://i.postimg.cc/k42p3ZPd/2-globe-valve-banner.jpg" alt="Globe Valve Types" width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
+                </div>
+                <GlobeValvesContent />
               </>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
