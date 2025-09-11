@@ -60,7 +60,7 @@ const ProductDropdown = ({ isMobile = false }: { isMobile?: boolean }) => {
         <ChevronDown className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
       </Link>
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-64 rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="absolute top-full left-0 w-64 rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5">
           <div className="py-2">
             {productCategories.map(product => (
               <Link
