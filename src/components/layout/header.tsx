@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -110,7 +111,7 @@ const Header = () => {
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-8 w-8" />
+                  <Menu className="h-10 w-10" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
@@ -122,7 +123,7 @@ const Header = () => {
                     </Link>
                     <SheetTrigger asChild>
                       <Button variant="ghost" size="icon">
-                        <X className="h-8 w-8" />
+                        <X className="h-10 w-10" />
                         <span className="sr-only">Close menu</span>
                       </Button>
                     </SheetTrigger>
