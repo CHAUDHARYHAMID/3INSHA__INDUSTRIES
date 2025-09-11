@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import {
   Card,
@@ -11,12 +13,17 @@ import { Button } from '../ui/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { products } from '@/lib/products';
+import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
+import { cn } from '@/lib/utils';
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/\s+/g, '-');
 }
 
 const ProductsSection = () => {
+    const { ref, isIntersecting } = useIntersectionObserver({
+        threshold: 0.1,
+    });
 
   return (
     <section id="products" className="py-8 bg-background section-padding">
@@ -30,9 +37,13 @@ const ProductsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((offering, index) => (
-            <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col border shadow-sm">
+            <Card key={index} className={cn(
+                "group overflow-hidden rounded-lg shadow-lg text-center flex flex-col border shadow-sm transition-all duration-500",
+                isIntersecting ? 'animate-fade-in-up' : 'opacity-0 translate-y-10'
+              )}
+              style={{ animationDelay: `${index * 150}ms` }}>
               <div className="relative h-60 w-full overflow-hidden">
                 <Image
                     src={offering.image}
