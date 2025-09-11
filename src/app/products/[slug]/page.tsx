@@ -1,3 +1,4 @@
+
 import { products } from '@/lib/products';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -5,14 +6,17 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { ContactForm } from '@/components/contact-form';
-import GateValvesContent from '@/components/products/gate-valves-content';
-import GlobeValvesContent from '@/components/products/globe-valves-content';
-import ForgedSteelValvesContent from '@/components/products/forged-steel-valves-content';
-import NonReturnValvesContent from '@/components/products/non-return-valves-content';
-import ControlValvesContent from '@/components/products/control-valves-content';
-import ButterflyValvesContent from '@/components/products/butterfly-valves-content';
-import StrainersContent from '@/components/products/strainers-content';
 import images from '@/lib/placeholder-images.json';
+import dynamic from 'next/dynamic';
+
+const GateValvesContent = dynamic(() => import('@/components/products/gate-valves-content'));
+const GlobeValvesContent = dynamic(() => import('@/components/products/globe-valves-content'));
+const ForgedSteelValvesContent = dynamic(() => import('@/components/products/forged-steel-valves-content'));
+const NonReturnValvesContent = dynamic(() => import('@/components/products/non-return-valves-content'));
+const ControlValvesContent = dynamic(() => import('@/components/products/control-valves-content'));
+const ButterflyValvesContent = dynamic(() => import('@/components/products/butterfly-valves-content'));
+const StrainersContent = dynamic(() => import('@/components/products/strainers-content'));
+
 
 function slugify(text: string) {
   return text.toLowerCase().replace(/\s+/g, '-');
