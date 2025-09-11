@@ -106,7 +106,7 @@ const HeroSection = () => {
         <CarouselContent>
           {slides.map((slide, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[75vh] min-h-[550px] w-full flex items-center justify-center text-white">
+              <div className="relative h-[80vh] min-h-[600px] w-full flex items-center justify-center text-white md:h-[75vh] md:min-h-[550px]">
                 <Image
                   src={slide.image}
                   alt={slide.title}
