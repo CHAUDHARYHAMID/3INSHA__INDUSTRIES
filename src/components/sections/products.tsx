@@ -33,12 +33,12 @@ const ProductsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((offering, index) => (
             <Card key={index} className="group overflow-hidden rounded-lg shadow-lg text-center flex flex-col border shadow-sm">
-              <div className="relative h-60 w-full">
+              <div className="relative h-60 w-full overflow-hidden">
                 <Image
                     src={offering.image}
                     alt={offering.category}
                     fill
-                    className="object-contain"
+                    className="object-contain transition-transform duration-300 ease-in-out group-hover:scale-110"
                     data-ai-hint={offering.hint}
                 />
               </div>
