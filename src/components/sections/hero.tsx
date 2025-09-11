@@ -12,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { products } from '@/lib/products';
 
 const slides = [
   {
@@ -72,7 +73,27 @@ const slides = [
   },
 ];
 
+function slugify(text: string) {
+  return text.toLowerCase().replace(/\s+/g, '-');
+}
+
 const HeroSection = () => {
+
+  const getProductHref = (slideTitle: string) => {
+    const slug = slugify(slideTitle);
+    const productExists = products.some(p => slugify(p.category) === slug);
+    if (productExists) {
+      return `/products/${slug}`;
+    }
+    if (slug === 'safety-valves') {
+        const specialServiceSlug = slugify('Special Service Valves');
+        if (products.some(p => slugify(p.category) === specialServiceSlug)) {
+            return `/products/${specialServiceSlug}`;
+        }
+    }
+    return '#products';
+  }
+
   return (
     <section id="home" className="relative w-full">
       <Carousel
@@ -106,7 +127,7 @@ const HeroSection = () => {
                         variant="outline"
                         className="text-lg py-7 px-10 border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary"
                       >
-                        <Link href="#products">
+                        <Link href={getProductHref(slide.title)}>
                           Explore
                           <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>
