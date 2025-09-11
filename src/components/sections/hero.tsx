@@ -155,6 +155,7 @@ const HeroSection = () => {
                           height={250}
                           className="z-20"
                           style={{ objectFit: slide.objectFit as 'cover' | 'contain' }}
+                          priority={index === 0}
                         />
                       </div>
                     ) : (
@@ -166,6 +167,7 @@ const HeroSection = () => {
                         height={360}
                         className={'rounded-full z-10'}
                         style={{ objectFit: slide.objectFit as 'cover' | 'contain' }}
+                        priority={index === 0}
                       />
                     )}
                   </div>
