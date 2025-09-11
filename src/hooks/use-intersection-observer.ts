@@ -6,9 +6,11 @@ type UseIntersectionObserverOptions = {
   threshold?: number;
   root?: Element | null;
   rootMargin?: string;
+  triggerOnce?: boolean;
 };
 
 export const useIntersectionObserver = (options: UseIntersectionObserverOptions = {}) => {
+  const { threshold = 0.1, root = null, rootMargin = '0px', triggerOnce = true } = options;
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -17,11 +19,19 @@ export const useIntersectionObserver = (options: UseIntersectionObserverOptions 
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsIntersecting(true);
+          if (triggerOnce) {
+            observer.unobserve(entry.target);
+          }
+        } else {
+            if (!triggerOnce) {
+                setIsIntersecting(false);
+            }
         }
       },
       {
-        threshold: 0.1,
-        ...options,
+        threshold,
+        root,
+        rootMargin,
       }
     );
 
@@ -34,7 +44,7 @@ export const useIntersectionObserver = (options: UseIntersectionObserverOptions 
         observer.unobserve(ref.current);
       }
     };
-  }, [options]);
+  }, [threshold, root, rootMargin, triggerOnce]);
 
   return { ref, isIntersecting };
 };
