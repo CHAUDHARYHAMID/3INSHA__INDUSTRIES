@@ -31,17 +31,17 @@ const ProfileSection = () => {
 
           <div className="text-left">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl mb-6 uppercase text-white">
-              Profile
+              Our Array of Products
             </h2>
             <p className="text-lg text-white/80 mb-4">
-              Our array of products is a perfect blend of technology, innovation and design, which serves the critical requirements of our customers. To enable our customer, experience our products, bwe also provide free sampling of our valves. Our adherence towards quality, help us in acquiring the satisfaction of our customers. After creating a strong foothold in the domestic arena, we are now venturing into exports.
+              Our products represent a perfect blend of technology, innovation, and design, catering to the critical requirements of our customers. To help clients experience the quality of our offerings, we also provide free samples of our valves.
             </p>
             <p className="text-lg text-white/80 mb-6">
-              Get in contact with us on <strong className="text-accent">9820443935 | 9867322862</strong> to let us know what you need, and we will be there to serve you. Our prices are affordable and vary depending on the services that you require from us.
+              Our strong commitment to quality has enabled us to earn the trust and satisfaction of our customers. Having established a solid presence in the domestic market, we are now expanding our reach to international markets.
             </p>
-            <Button asChild variant="link" size="lg" className="px-0 text-white hover:text-accent">
-                <Link href="#contact">Read More</Link>
-            </Button>
+            <p className="text-lg text-white/80 mb-6">
+              Get in touch with us at <strong className="text-accent">9820409988 | 7021181068</strong> to let us know your requirements, and we will be ready to serve you. Our pricing is competitive and tailored to the services you need.
+            </p>
           </div>
         </div>
       </div>
