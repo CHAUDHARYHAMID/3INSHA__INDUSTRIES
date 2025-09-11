@@ -49,7 +49,7 @@ export const products = [
     },
     {
         category: "Special Service Valves",
-        image: "https://picsum.photos/seed/ssv1/400/400",
+        image: "https://i.postimg.cc/VLDfvJyW/safety-valve-highlighter.png",
         hint: "safety valve",
         description: "We provide special valves like safety relief, pressure reducing, and breather valves for critical service applications.",
     },
