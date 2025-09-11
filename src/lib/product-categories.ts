@@ -12,15 +12,18 @@ export const productCategories = [
         category: "Control Valves",
     },
     {
-        category: "Pneumatic Valves",
-    },
-    {
         category: "Ball Valves",
     },
     {
-        category: "Special Services",
+        category: "Butterfly Valves",
     },
     {
-        category: "Dampers",
+        category: "Forged Steel Valves",
+    },
+    {
+        category: "Strainers",
+    },
+    {
+        category: "Special Service Valves",
     },
 ];
