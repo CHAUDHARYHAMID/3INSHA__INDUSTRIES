@@ -113,7 +113,7 @@ const Footer = () => {
              <div className="flex space-x-3 pt-4">
               {socialLinks.map(({ Icon, href, className }, index) => (
                 <Link key={index} href={href} passHref>
-                  <Button variant="outline" size="icon" className={className} suppressHydrationWarning>
+                  <Button variant="outline" className={className} suppressHydrationWarning>
                     <Icon className="h-10 w-10" />
                   </Button>
                 </Link>
