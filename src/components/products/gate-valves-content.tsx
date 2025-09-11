@@ -85,8 +85,8 @@ const GateValvesContent = () => {
         </ul>
       </div>
 
-      <div className="flex items-center gap-8">
-        <div className="relative w-1/3 h-64">
+      <div className="grid grid-cols-2 items-center gap-8">
+        <div className="relative w-full h-64">
             <Image
                 src="https://i.postimg.cc/26B3bkN9/1-GATE-VALVE-highlight.jpg"
                 alt="Gate valve cross-section"
@@ -95,9 +95,9 @@ const GateValvesContent = () => {
                 data-ai-hint="valve diagram"
             />
         </div>
-        <div className="relative w-2/3 h-64">
+        <div className="relative w-full h-64">
             <Image
-                src="https://i.postimg.cc/P5tS1nd3/gate-valve-parts.jpg"
+                src="https://i.postimg.cc/mkxVf8pX/second-gate-valve-image.png"
                 alt="Gate valve parts"
                 fill
                 className="object-contain"

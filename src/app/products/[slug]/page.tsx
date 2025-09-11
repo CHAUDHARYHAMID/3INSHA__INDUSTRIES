@@ -45,7 +45,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                 <GateValvesContent />
             </div>
             <div className="bg-card p-6 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-bold text-primary mb-4">Contact Us</h2>
+                <h2 className="text-2xl font-bold text-primary mb-4">Enquire Now</h2>
                 <ContactForm />
             </div>
           </div>
