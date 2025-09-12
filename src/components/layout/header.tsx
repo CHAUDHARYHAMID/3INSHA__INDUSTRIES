@@ -82,9 +82,9 @@ const Header = () => {
 
       {/* Main Header */}
       <div className="bg-background">
-        <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
             <Link href="/" className="flex-shrink-0">
-               <Image src={images.logo.src} alt={images.logo.alt} width={280} height={62} className="h-auto w-48 sm:w-60 md:w-72" />
+               <Image src={images.logo.src} alt={images.logo.alt} width={280} height={62} className="h-auto w-60 sm:w-64 md:w-72" />
             </Link>
 
             {/* Desktop Navigation */}
