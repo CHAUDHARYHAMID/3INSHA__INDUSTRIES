@@ -110,7 +110,7 @@ const Header = () => {
           <div className="flex items-center lg:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" className="h-14 w-14">
                   <Menu className="h-10 w-10" />
                   <span className="sr-only">Open menu</span>
                 </Button>
@@ -123,7 +123,7 @@ const Header = () => {
                         <Image src={images.logo.src} alt={images.logo.alt} width={230} height={62} />
                     </Link>
                     <SheetTrigger asChild>
-                      <Button variant="ghost" size="icon">
+                      <Button variant="ghost" className="h-14 w-14">
                         <X className="h-10 w-10" />
                         <span className="sr-only">Close menu</span>
                       </Button>
