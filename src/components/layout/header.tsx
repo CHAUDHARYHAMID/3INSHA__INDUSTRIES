@@ -82,7 +82,7 @@ const Header = () => {
 
       {/* Main Header */}
       <div className="bg-background">
-        <div className="container mx-auto flex h-24 items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
             <Link href="/" className="flex-shrink-0">
                <Image src={images.logo.src} alt={images.logo.alt} width={280} height={62} className="h-auto w-48 sm:w-60 md:w-72" />
             </Link>
@@ -107,11 +107,11 @@ const Header = () => {
             </nav>
 
           {/* Mobile/Tablet Navigation */}
-          <div className="lg:hidden">
+          <div className="flex items-center lg:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-10 w-10" />
+                  <Menu className="h-8 w-8" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
@@ -124,7 +124,7 @@ const Header = () => {
                     </Link>
                     <SheetTrigger asChild>
                       <Button variant="ghost" size="icon">
-                        <X className="h-10 w-10" />
+                        <X className="h-8 w-8" />
                         <span className="sr-only">Close menu</span>
                       </Button>
                     </SheetTrigger>
