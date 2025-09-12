@@ -1,7 +1,7 @@
 
 "use client";
 
-import { BadgeCheck, Wrench, Timer, Users, Factory, Globe, Award, HeartHandshake } from 'lucide-react';
+import { BadgeCheck, Users, Factory, Globe, Award, HeartHandshake } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 import { cn } from '@/lib/utils';
