@@ -110,10 +110,10 @@ const Header = () => {
           <div className="flex items-center lg:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" className="h-14 w-14">
+                <button className="flex h-16 w-16 items-center justify-center rounded-md transition-colors hover:bg-accent hover:text-accent-foreground">
                   <Menu className="h-10 w-10" />
                   <span className="sr-only">Open menu</span>
-                </Button>
+                </button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] bg-background p-0">
                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
@@ -123,10 +123,10 @@ const Header = () => {
                         <Image src={images.logo.src} alt={images.logo.alt} width={230} height={62} />
                     </Link>
                     <SheetTrigger asChild>
-                      <Button variant="ghost" className="h-14 w-14">
+                      <button className="flex h-16 w-16 items-center justify-center rounded-md transition-colors hover:bg-accent hover:text-accent-foreground">
                         <X className="h-10 w-10" />
                         <span className="sr-only">Close menu</span>
-                      </Button>
+                      </button>
                     </SheetTrigger>
                   </div>
                   <nav className="flex flex-1 flex-col justify-between p-4">
