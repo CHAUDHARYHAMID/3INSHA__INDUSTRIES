@@ -22,6 +22,7 @@ const AboutSection = () => {
               fill
               className="object-cover"
               data-ai-hint="industrial factory"
+              loading="lazy"
             />
           </div>
         </div>

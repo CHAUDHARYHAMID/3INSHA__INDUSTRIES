@@ -73,6 +73,7 @@ const StrainersContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="industrial strainer"
+                loading="lazy"
             />
         </div>
         <div className="relative w-full h-64">
@@ -82,6 +83,7 @@ const StrainersContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="basket strainer"
+                loading="lazy"
             />
         </div>
       </div>

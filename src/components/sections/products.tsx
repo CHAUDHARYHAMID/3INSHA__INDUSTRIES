@@ -64,6 +64,7 @@ const ProductsSection = () => {
                     fill
                     className="object-contain transition-transform duration-300 ease-in-out group-hover:scale-110"
                     data-ai-hint={offering.hint}
+                    loading="lazy"
                 />
               </div>
               <div className="flex flex-col flex-grow justify-between">

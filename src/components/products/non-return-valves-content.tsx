@@ -98,6 +98,7 @@ const NonReturnValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="check valve"
+                loading="lazy"
             />
         </div>
         <div className="relative w-full h-64">
@@ -107,6 +108,7 @@ const NonReturnValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="check valve"
+                loading="lazy"
             />
         </div>
       </div>

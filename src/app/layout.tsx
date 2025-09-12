@@ -6,12 +6,11 @@ import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 import WhatsAppFAB from '@/components/whatsapp-fab';
 import CallFAB from '@/components/call-fab';
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-poppins',
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -29,7 +28,7 @@ export default function RootLayout({
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased',
-          poppins.variable
+          inter.variable
         )}
       >
         <Header />

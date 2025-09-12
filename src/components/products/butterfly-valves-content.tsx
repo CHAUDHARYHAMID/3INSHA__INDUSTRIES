@@ -75,6 +75,7 @@ const ButterflyValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="butterfly valve"
+                loading="lazy"
             />
         </div>
         <div className="relative w-full h-64">
@@ -84,6 +85,7 @@ const ButterflyValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="industrial valve"
+                loading="lazy"
             />
         </div>
       </div>

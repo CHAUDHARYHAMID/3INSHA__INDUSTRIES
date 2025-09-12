@@ -94,6 +94,7 @@ const GateValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="valve diagram"
+                loading="lazy"
             />
         </div>
         <div className="relative w-full h-64">
@@ -103,6 +104,7 @@ const GateValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="valve diagram"
+                loading="lazy"
             />
         </div>
       </div>

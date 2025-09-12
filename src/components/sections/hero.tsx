@@ -14,6 +14,8 @@ import {
 } from '@/components/ui/carousel';
 import { products } from '@/lib/products';
 import images from '@/lib/placeholder-images.json';
+import React from 'react';
+import Autoplay from "embla-carousel-autoplay"
 
 const slides = [
   {
@@ -79,6 +81,9 @@ function slugify(text: string) {
 }
 
 const HeroSection = () => {
+    const plugin = React.useRef(
+        Autoplay({ delay: 3000, stopOnInteraction: true })
+    )
 
   const getProductHref = (slideTitle: string) => {
     const slug = slugify(slideTitle);
@@ -98,10 +103,13 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative w-full">
       <Carousel
+        plugins={[plugin.current]}
         opts={{
           loop: true,
         }}
         className="w-full"
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
           {slides.map((slide, index) => (

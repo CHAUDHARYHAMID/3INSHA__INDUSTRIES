@@ -70,6 +70,7 @@ const ForgedSteelValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="forged steel"
+                loading="lazy"
             />
         </div>
         <div className="relative w-full h-64">
@@ -79,6 +80,7 @@ const ForgedSteelValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="industrial valve"
+                loading="lazy"
             />
         </div>
       </div>

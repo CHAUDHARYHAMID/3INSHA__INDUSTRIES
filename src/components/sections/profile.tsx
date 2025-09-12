@@ -14,6 +14,7 @@ const ProfileSection = () => {
         objectFit="cover"
         className="z-0"
         data-ai-hint="industrial valves"
+        loading="lazy"
       />
       <div className="absolute inset-0 bg-primary/80 z-10" />
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-20">
@@ -26,6 +27,7 @@ const ProfileSection = () => {
                 height={650}
                 className="rounded-lg shadow-2xl"
                 data-ai-hint="industrial equipment"
+                loading="lazy"
               />
           </div>
 

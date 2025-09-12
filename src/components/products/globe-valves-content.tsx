@@ -89,6 +89,7 @@ const GlobeValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="globe valve"
+                loading="lazy"
             />
         </div>
         <div className="relative w-full h-64">
@@ -98,6 +99,7 @@ const GlobeValvesContent = () => {
                 fill
                 className="object-contain"
                 data-ai-hint="industrial valve"
+                loading="lazy"
             />
         </div>
       </div>

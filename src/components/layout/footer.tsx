@@ -70,7 +70,8 @@ const Footer = () => {
                         width={63}
                         height={63}
                         className='object-contain h-full w-auto'
-                        data-ai-hint="government logos" />
+                        data-ai-hint="government logos" 
+                        loading="lazy" />
                 </div>
                 <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
@@ -79,7 +80,8 @@ const Footer = () => {
                         width={140}
                         height={63}
                         className='object-contain h-full w-auto'
-                        data-ai-hint="certification logos" />
+                        data-ai-hint="certification logos" 
+                        loading="lazy" />
                 </div>
                 <div className="relative h-16 w-auto overflow-hidden rounded-lg">
                     <Image 
@@ -88,7 +90,8 @@ const Footer = () => {
                         width={63}
                         height={63}
                         className='object-contain h-full w-auto'
-                        data-ai-hint="certification logos" />
+                        data-ai-hint="certification logos" 
+                        loading="lazy" />
                 </div>
              </div>
           </div>

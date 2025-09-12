@@ -58,49 +58,49 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             {isGateValves ? (
               <>
                 <div className="mb-8">
-                    <Image src={images.gateValveBanner.src} alt={images.gateValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
+                    <Image src={images.gateValveBanner.src} alt={images.gateValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" priority />
                 </div>
                 <GateValvesContent />
               </>
             ) : isGlobeValves ? (
               <>
                 <div className="mb-8">
-                    <Image src={images.globeValveBanner.src} alt={images.globeValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" />
+                    <Image src={images.globeValveBanner.src} alt={images.globeValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="valve diagrams" priority />
                 </div>
                 <GlobeValvesContent />
               </>
             ) : isForgedSteelValves ? (
                 <>
                   <div className="mb-8">
-                      <Image src={images.forgedSteelBanner.src} alt={images.forgedSteelBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="forged steel valve" />
+                      <Image src={images.forgedSteelBanner.src} alt={images.forgedSteelBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="forged steel valve" priority />
                   </div>
                   <ForgedSteelValvesContent />
                 </>
             ) : isNonReturnValves ? (
               <>
                 <div className="mb-8">
-                    <Image src={images.nrvBanner.src} alt={images.nrvBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="check valve diagram" />
+                    <Image src={images.nrvBanner.src} alt={images.nrvBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="check valve diagram" priority />
                 </div>
                 <NonReturnValvesContent />
               </>
             ) : isControlValves ? (
               <>
                 <div className="mb-8">
-                    <Image src={images.controlValveBanner.src} alt={images.controlValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="control valve diagram" />
+                    <Image src={images.controlValveBanner.src} alt={images.controlValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="control valve diagram" priority />
                 </div>
                 <ControlValvesContent />
               </>
             ) : isButterflyValves ? (
               <>
                 <div className="mb-8">
-                    <Image src={images.butterflyBanner.src} alt={images.butterflyBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="butterfly valve diagram" />
+                    <Image src={images.butterflyBanner.src} alt={images.butterflyBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="butterfly valve diagram" priority />
                 </div>
                 <ButterflyValvesContent />
               </>
             ) : isStrainers ? (
               <>
                 <div className="mb-8">
-                    <Image src={images.strainerBanner.src} alt={images.strainerBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="industrial strainer diagram" />
+                    <Image src={images.strainerBanner.src} alt={images.strainerBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="industrial strainer diagram" priority />
                 </div>
                 <StrainersContent />
               </>
@@ -113,6 +113,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                     fill
                     className="object-contain"
                     data-ai-hint={product.hint}
+                    priority
                   />
                 </div>
                 <div className="space-y-6">
