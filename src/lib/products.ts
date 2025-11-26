@@ -19,7 +19,7 @@ export const products = [
     },
     {
         category: "Control Valves",
-        image: "https://i.postimg.cc/c4rsxbtL/control-valve-highlighter.jpg",
+        image: "https://i.postimg.cc/qBWvwdKZ/control-valve-highlighter-Photoroom.png",
         hint: "control valve",
         description: "Automate and control fluid dynamics with our advanced control valves, designed for precision and reliability.",
     },
