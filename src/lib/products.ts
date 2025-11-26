@@ -25,7 +25,7 @@ export const products = [
     },
     {
         category: "Ball Valves",
-        image: "https://i.postimg.cc/g2SPWT2k/5th-ball-highlighter.png",
+        image: "https://i.postimg.cc/3NTbrR6G/5th-ball-highlighter-Photoroom.png",
         hint: "ball valve",
         description: "Experience reliable sealing and quick shut-off with our robust ball valves, available in 1-piece, 2-piece, and 3-piece designs.",
     },
