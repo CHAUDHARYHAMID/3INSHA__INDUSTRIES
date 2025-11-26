@@ -10,9 +10,8 @@ const ProfileSection = () => {
       <Image
         src={images.profileBanner.src}
         alt={images.profileBanner.alt}
-        layout="fill"
-        objectFit="cover"
-        className="z-0"
+        fill
+        className="z-0 object-cover"
         data-ai-hint="industrial valves"
         loading="lazy"
       />
