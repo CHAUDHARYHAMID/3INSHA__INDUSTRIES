@@ -4,7 +4,6 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
-import WhatsAppFAB from '@/components/whatsapp-fab';
 import CallFAB from '@/components/call-fab';
 import { Inter } from 'next/font/google';
 
@@ -34,7 +33,6 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <WhatsAppFAB />
         <CallFAB />
         <Toaster />
       </body>
