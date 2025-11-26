@@ -1,7 +1,7 @@
 export const products = [
     {
         category: "Gate Valves",
-        image: "https://i.postimg.cc/26B3bkN9/1-GATE-VALVE-highlight.jpg",
+        image: "https://i.postimg.cc/htfcxyyg/GATE-removebg-preview.png",
         hint: "gate valve",
         description: "We offer a wide range of gate valves including flanged end, butt weld end, and socket weld end for various industrial applications.",
     },
