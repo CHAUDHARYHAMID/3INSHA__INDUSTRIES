@@ -8,14 +8,6 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
-import { ContactForm } from '../contact-form';
 import ProductDropdown from '../product-dropdown';
 import images from '@/lib/placeholder-images.json';
 
@@ -40,19 +32,9 @@ const Header = () => {
   ];
 
   const EnquireNowButton = () => (
-    <Dialog>
-      <DialogTrigger asChild>
-        <Button className="rounded-full bg-primary px-6 text-base font-semibold text-primary-foreground hover:bg-primary/90">
-          ENQUIRE NOW
-        </Button>
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle>Enquire Now</DialogTitle>
-        </DialogHeader>
-        <ContactForm />
-      </DialogContent>
-    </Dialog>
+      <Button asChild className="rounded-full bg-primary px-6 text-base font-semibold text-primary-foreground hover:bg-primary/90">
+        <Link href="/#contact">ENQUIRE NOW</Link>
+      </Button>
   );
 
   return (
@@ -150,19 +132,9 @@ const Header = () => {
                       </div>
                     </div>
                      <div className="flex flex-col items-center gap-4 py-4">
-                        <Dialog>
-                          <DialogTrigger asChild>
-                            <Button className="w-full rounded-full bg-primary px-6 text-base font-semibold text-primary-foreground hover:bg-primary/90">
-                              ENQUIRE NOW
-                            </Button>
-                          </DialogTrigger>
-                          <DialogContent className="sm:max-w-[425px]">
-                            <DialogHeader>
-                              <DialogTitle>Enquire Now</DialogTitle>
-                            </DialogHeader>
-                            <ContactForm />
-                          </DialogContent>
-                        </Dialog>
+                        <Button asChild className="w-full rounded-full bg-primary px-6 text-base font-semibold text-primary-foreground hover:bg-primary/90">
+                            <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>ENQUIRE NOW</Link>
+                        </Button>
                      </div>
                   </nav>
                 </div>

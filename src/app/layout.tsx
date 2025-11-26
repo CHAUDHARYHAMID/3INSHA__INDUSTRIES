@@ -1,17 +1,16 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 import CallFAB from '@/components/call-fab';
-import { Inter } from 'next/font/google';
-import Link from 'next/link';
+import { Poppins } from 'next/font/google';
 import WhatsAppFAB from '@/components/whatsapp-fab';
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +28,7 @@ export default function RootLayout({
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased',
-          inter.variable
+          poppins.variable
         )}
       >
         <Header />
@@ -37,7 +36,6 @@ export default function RootLayout({
         <Footer />
         <CallFAB />
         <WhatsAppFAB />
-        <Toaster />
       </body>
     </html>
   );

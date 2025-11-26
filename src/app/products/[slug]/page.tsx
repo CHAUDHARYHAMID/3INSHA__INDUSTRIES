@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { ContactForm } from '@/components/contact-form';
 import images from '@/lib/placeholder-images.json';
 import dynamic from 'next/dynamic';
 
@@ -54,7 +53,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             {isGateValves ? (
               <>
                 <div className="mb-8">
@@ -130,10 +129,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               </div>
             )}
           </div>
-          <div className="bg-card p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold text-primary mb-4">Enquire Now</h2>
-              <ContactForm />
-          </div>
+
         </div>
       </div>
     </div>
