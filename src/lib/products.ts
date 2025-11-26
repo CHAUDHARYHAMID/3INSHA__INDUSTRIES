@@ -31,7 +31,7 @@ export const products = [
     },
     {
         category: "Butterfly Valves",
-        image: "https://i.postimg.cc/c1TJPgbN/6th-butterfly-highlighter.jpg",
+        image: "https://i.postimg.cc/BQdPjKpm/6th-butterfly-highlighter-Photoroom.png",
         hint: "butterfly valve",
         description: "Our butterfly valves offer a compact design for efficient flow control in large-volume applications like water and HVAC systems.",
     },
