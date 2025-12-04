@@ -84,9 +84,6 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               </>
             ) : isControlValves ? (
               <>
-                <div className="mb-8">
-                    <Image src={images.controlValveBanner.src} alt={images.controlValveBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="control valve diagram" priority />
-                </div>
                 <ControlValvesContent />
               </>
             ) : isButterflyValves ? (
@@ -98,9 +95,6 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               </>
             ) : isStrainers ? (
               <>
-                <div className="mb-8">
-                    <Image src={images.strainerBanner.src} alt={images.strainerBanner.alt} width={800} height={200} className="w-full rounded-lg shadow-md" data-ai-hint="industrial strainer diagram" priority />
-                </div>
                 <StrainersContent />
               </>
             ) : (
