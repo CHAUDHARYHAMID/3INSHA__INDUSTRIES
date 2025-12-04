@@ -70,8 +70,9 @@ const StrainersContent = () => {
             <Image
                 src={images.strainerHighlighter.src}
                 alt={images.strainerHighlighter.alt}
-                fill
-                className="object-contain"
+                width={256}
+                height={256}
+                className="object-contain w-full h-full"
                 data-ai-hint="industrial strainer"
                 loading="lazy"
             />

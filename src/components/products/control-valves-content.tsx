@@ -86,8 +86,9 @@ const ControlValvesContent = () => {
             <Image
                 src={images.controlValveHighlighter.src}
                 alt={images.controlValveHighlighter.alt}
-                fill
-                className="object-contain"
+                width={256}
+                height={256}
+                className="object-contain w-full h-full"
                 data-ai-hint="control valve"
                 loading="lazy"
             />
