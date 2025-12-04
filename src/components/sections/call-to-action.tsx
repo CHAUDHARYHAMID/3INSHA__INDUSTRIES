@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
 import Link from 'next/link';
@@ -22,7 +23,7 @@ const CallToActionSection = () => {
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link href="tel:+919820409988">
                     <Phone className="mr-2 h-5 w-5" />
-                    Call +91 9820409988
+                    Call +91-98204 09988
                 </Link>
                 </Button>
             </div>

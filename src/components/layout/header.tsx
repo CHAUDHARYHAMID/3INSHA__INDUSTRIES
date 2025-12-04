@@ -50,7 +50,7 @@ const Header = () => {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-base">
             <Link href="tel:+919820409988" className="flex items-center transition-colors hover:text-accent">
               <Phone className="mr-2 h-4 w-4" />
-              <span>+91 9820409988</span>
+              <span>+91-98204 09988</span>
             </Link>
             <Link href="mailto:info@inshaindustries.com" className="flex items-center transition-colors hover:text-accent">
               <Mail className="mr-2 h-4 w-4" />

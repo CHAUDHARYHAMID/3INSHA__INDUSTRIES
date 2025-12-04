@@ -41,7 +41,7 @@ const ProfileSection = () => {
               Our strong commitment to quality has enabled us to earn the trust and satisfaction of our customers. Having established a solid presence in the domestic market, we are now expanding our reach to international markets.
             </p>
             <p className="text-lg text-white/80 mb-6">
-              Get in touch with us at <strong className="text-accent">9820409988 | 7021181068</strong> to let us know your requirements, and we will be ready to serve you. Our pricing is competitive and tailored to the services you need.
+              Get in touch with us at <strong className="text-accent">+91-98204 09988 | +91-70211 81068</strong> to let us know your requirements, and we will be ready to serve you. Our pricing is competitive and tailored to the services you need.
             </p>
           </div>
         </div>
