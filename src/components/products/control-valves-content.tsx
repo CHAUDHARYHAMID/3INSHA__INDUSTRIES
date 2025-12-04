@@ -81,7 +81,7 @@ const ControlValvesContent = () => {
         </ul>
       </div>
 
-      <div className="grid grid-cols-2 items-center gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
         <div className="relative w-full h-64">
             <Image
                 src={images.controlValveHighlighter.src}
@@ -90,16 +90,6 @@ const ControlValvesContent = () => {
                 height={256}
                 className="object-contain w-full h-full"
                 data-ai-hint="control valve"
-                loading="lazy"
-            />
-        </div>
-        <div className="relative w-full h-64">
-            <Image
-                src={images.controlValve2.src}
-                alt={images.controlValve2.alt}
-                fill
-                className="object-contain"
-                data-ai-hint="industrial valve"
                 loading="lazy"
             />
         </div>
