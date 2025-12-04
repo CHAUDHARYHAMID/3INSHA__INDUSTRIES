@@ -48,14 +48,14 @@ const Header = () => {
       <div className="bg-primary text-primary-foreground">
         <div className="container mx-auto flex h-auto min-h-[1rem] items-center justify-between px-4 py-1 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-base">
-            <div className="flex items-center">
+            <Link href="tel:+919820409988" className="flex items-center transition-colors hover:text-accent">
               <Phone className="mr-2 h-4 w-4" />
               <span>+91 9820409988</span>
-            </div>
-            <div className="flex items-center">
+            </Link>
+            <Link href="mailto:info@inshaindustries.com" className="flex items-center transition-colors hover:text-accent">
               <Mail className="mr-2 h-4 w-4" />
               <span>info@inshaindustries.com</span>
-            </div>
+            </Link>
           </div>
           <div className="flex items-center space-x-4">
           </div>
