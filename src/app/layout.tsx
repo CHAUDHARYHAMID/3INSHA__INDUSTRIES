@@ -16,6 +16,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Insha Industries',
   description: 'Leading manufacturer and supplier of industrial valves.',
+  icons: {
+    icon: 'https://i.postimg.cc/MpLqyh0q/logo.jpg',
+    shortcut: 'https://i.postimg.cc/MpLqyh0q/logo.jpg',
+    apple: 'https://i.postimg.cc/MpLqyh0q/logo.jpg',
+  },
 };
 
 export default function RootLayout({
