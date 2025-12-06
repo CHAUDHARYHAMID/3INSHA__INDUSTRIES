@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 const siteUrl = 'https://www.inshaindustries.com';
-const logoUrl = 'https://i.postimg.cc/MpLqyh0q/logo.jpg';
+const logoUrl = 'https://i.postimg.cc/cJFkCLYJ/cropped-circle-image.png';
 const siteTitle = 'Insha Industries | Manufacturer & Supplier of Industrial Valves';
 const siteDescription =
   'Insha Industries, an ISO 9001:2015 certified company, is a leading manufacturer and supplier of high-quality industrial valves including gate, globe, ball, and butterfly valves.';
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
   icons: {
-    icon: [{ url: logoUrl, type: 'image/jpeg' }],
-    shortcut: logoUrl,
-    apple: logoUrl,
+    icon: [{ url: logoUrl, type: 'image/png' }],
+    shortcut: [{ url: logoUrl, type: 'image/png' }],
+    apple: [{ url: logoUrl, type: 'image/png' }],
   },
   openGraph: {
     title: siteTitle,
