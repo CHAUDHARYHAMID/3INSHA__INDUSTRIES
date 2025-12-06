@@ -1,3 +1,3 @@
 # Insha Industries
 
-This is a Next.js project for Insha Industries, a leading manufacturer and supplier of industrial valves.
+Insha Industries ISO 9001:2015 certified company, specializes in manufacturing and trading of industrial valves
