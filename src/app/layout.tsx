@@ -15,8 +15,8 @@ const poppins = Poppins({
 });
 
 const siteUrl = 'https://www.inshaindustries.com';
-const logoUrl = 'https://i.postimg.cc/cJFkCLYJ/cropped-circle-image.png';
-const siteTitle = 'Insha Industries | Manufacturer & Supplier of Industrial Valves';
+const logoUrl = '/favicon-192x192.png';
+const siteTitle = 'Insha Industries';
 const siteDescription =
   'Insha Industries, an ISO 9001:2015 certified company, is a leading manufacturer and supplier of high-quality industrial valves including gate, globe, ball, and butterfly valves.';
 
@@ -25,9 +25,18 @@ export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
   icons: {
-    icon: [{ url: logoUrl, type: 'image/png' }],
-    shortcut: [{ url: logoUrl, type: 'image/png' }],
-    apple: [{ url: logoUrl, type: 'image/png' }],
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    shortcut: [
+      { url: '/favicon.ico', type: 'image/x-icon' }
+    ]
   },
   openGraph: {
     title: siteTitle,
@@ -58,7 +67,7 @@ const organizationSchema = {
     '@type': 'Organization',
     name: 'Insha Industries',
     url: siteUrl,
-    logo: logoUrl,
+    logo: `${siteUrl}/favicon-192x192.png`,
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+91-9820409988',
