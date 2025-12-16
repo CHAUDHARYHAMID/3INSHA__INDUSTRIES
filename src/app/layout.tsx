@@ -5,17 +5,16 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 import CallFAB from '@/components/call-fab';
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import WhatsAppFAB from '@/components/whatsapp-fab';
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-inter',
 });
 
 const siteUrl = 'https://www.inshaindustries.com';
-const logoUrl = '/favicon-192x192.png';
+const logoUrl = 'https://i.postimg.cc/cJFkCLYJ/cropped-circle-image.png';
 const siteTitle = 'Insha Industries';
 const siteDescription =
   'Insha Industries, an ISO 9001:2015 certified company, is a leading manufacturer and supplier of high-quality industrial valves including gate, globe, ball, and butterfly valves.';
@@ -26,16 +25,13 @@ export const metadata: Metadata = {
   description: siteDescription,
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
-      { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' }
+      { url: logoUrl, type: 'image/png' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+      { url: logoUrl, type: 'image/png' }
     ],
     shortcut: [
-      { url: '/favicon.ico', type: 'image/x-icon' }
+      { url: logoUrl, type: 'image/png' }
     ]
   },
   openGraph: {
@@ -46,8 +42,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: logoUrl,
-        width: 1200,
-        height: 630,
+        width: 192,
+        height: 192,
         alt: 'Insha Industries Logo',
       },
     ],
@@ -67,7 +63,7 @@ const organizationSchema = {
     '@type': 'Organization',
     name: 'Insha Industries',
     url: siteUrl,
-    logo: `${siteUrl}/favicon-192x192.png`,
+    logo: logoUrl,
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+91-9820409988',
@@ -94,12 +90,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         {/* Fallback favicon link to be extra sure */}
-        <link rel="icon" href={logoUrl} sizes="any" />
+        <link rel="icon" href={logoUrl} sizes="any" type="image/png" />
       </head>
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased',
-          poppins.variable
+          inter.variable
         )}
       >
         <Header />
