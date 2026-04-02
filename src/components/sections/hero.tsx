@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -122,6 +121,9 @@ const HeroSection = () => {
                   className="object-cover"
                   data-ai-hint={slide.hint}
                   priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-black/50" />
                 <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -164,6 +166,9 @@ const HeroSection = () => {
                           className="z-20"
                           style={{ objectFit: slide.objectFit as 'cover' | 'contain' }}
                           priority={index === 0}
+                          loading={index === 0 ? "eager" : "lazy"}
+                          decoding="async"
+                          sizes="(max-width: 768px) 0px, 250px"
                         />
                       </div>
                     ) : (
@@ -176,6 +181,9 @@ const HeroSection = () => {
                         className={'rounded-full z-10'}
                         style={{ objectFit: slide.objectFit as 'cover' | 'contain' }}
                         priority={index === 0}
+                        loading={index === 0 ? "eager" : "lazy"}
+                        decoding="async"
+                        sizes="(max-width: 768px) 0px, 360px"
                       />
                     )}
                   </div>

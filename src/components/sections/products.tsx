@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from 'next/image';
@@ -65,6 +64,8 @@ const ProductsSection = () => {
                     className="object-contain transition-transform duration-300 ease-in-out group-hover:scale-110"
                     data-ai-hint={offering.hint}
                     loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="flex flex-col flex-grow justify-between">
