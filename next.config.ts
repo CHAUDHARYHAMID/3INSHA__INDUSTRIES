@@ -31,6 +31,40 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/gate-valves',
+        destination: '/products/gate-valves',
+        permanent: true,
+      },
+      {
+        source: '/globe-valves',
+        destination: '/products/globe-valves',
+        permanent: true,
+      },
+      {
+        source: '/check-valves',
+        destination: '/products/non-return-valves',
+        permanent: true,
+      },
+      {
+        source: '/ball-valves',
+        destination: '/products/ball-valves',
+        permanent: true,
+      },
+      {
+        source: '/butterfly-valves',
+        destination: '/products/butterfly-valves',
+        permanent: true,
+      },
+      {
+        source: '/contact-us',
+        destination: '/#contact',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
