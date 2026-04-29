@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://inshaindustries.com/</loc>
+    <lastmod>2024-05-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://inshaindustries.com/gate-valves</loc>
+    <lastmod>2024-05-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://inshaindustries.com/globe-valves</loc>
+    <lastmod>2024-05-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://inshaindustries.com/check-valves</loc>
+    <lastmod>2024-05-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://inshaindustries.com/ball-valves</loc>
+    <lastmod>2024-05-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://inshaindustries.com/butterfly-valves</loc>
+    <lastmod>2024-05-22</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://inshaindustries.com/contact-us</loc>
+    <lastmod>2024-05-22</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
